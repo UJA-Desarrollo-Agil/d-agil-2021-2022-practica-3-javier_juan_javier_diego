@@ -6,7 +6,7 @@
 ## Índice
   * [Índice](#indice)
   * [Miembros](#miembros)
-  * [Enlaces] (#enlaces)
+  * [Enlaces](#enlaces)
   * [Descripcion](#descripcion)
   * [Personajes](#personajes)
   * [Capturas del juego](#capturasjuego)
