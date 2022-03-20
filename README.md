@@ -13,7 +13,7 @@
   * [Capturas de Trello durante el desarrollo](#capturastrello)
 
 <a name="indice"></a>
-## Indice
+## Miembros
 * *Nombre*: Javier Lozano Ropa, Juan Navarro Navarro, Javier Ávalos Monroy, Diego Corral Fernández
 * *correo*: jlr00043@red.ujaen.es jnn@red.ujaen.es jam00070@red.ujaen.es dcf00014@red.ujaen.es
 * *Telegram*: @jaloro @jnn00007  @javiiavalos10 @DiegoCorral
