@@ -10,6 +10,8 @@
   * [Descripcion](#descripcion)
   * [Personajes](#personajes)
   * [Capturas de Trello durante el desarrollo](#capturastrello)
+  * [Vinculación Trello](#vinculacionTrello)
+  * [Vinculación GitHub](#vinculacionGithub)
 
 <a name="indice"></a>
 ## Miembros
@@ -39,14 +41,20 @@ El gigante noble Ibai, personaje que nos dará pistas sobre dónde podemos encon
 El minero Suso, este personaje nos ayuda a escapar del castillo de la bruja Carmen cuando recuperamos el martillo.
 Los murciélagos, estos personajes son súbditos de la bruja Carmen que nos molestaran y atacaran en nuestra historia.
 
-## Capturas de Trello durante el desarrollo
+<a name="capturastrello"></a>
+## Capturas de Trello al inicio
 
 ![image](https://user-images.githubusercontent.com/99321533/159525958-69556f1c-35ba-4582-8232-c254aa464d7e.png)
 ![image](https://user-images.githubusercontent.com/99321533/159526049-9d0ea3fc-90c8-4684-9b90-8b8a609bca0d.png)
 
-### Inicio Trello 
-Inicialmente, se crean las tarjetas en el Product Backlog.
+<a name="vinculacionTrello"></a>
+## Vinculacion Trello
+
 ![image](https://user-images.githubusercontent.com/99320022/159526652-d81bc634-2298-4876-b48e-0a0cbd8b796f.png)
+
+<a name="vinculacionGithub"></a>
+## Vinculacion GitHub
+
 ![image](https://user-images.githubusercontent.com/99320022/159526708-dd468e2e-39f4-43cf-8af7-136d12323529.png)
 
 
