@@ -46,7 +46,9 @@ Los murciélagos, estos personajes son súbditos de la bruja Carmen que nos mole
 
 ### Inicio Trello 
 Inicialmente, se crean las tarjetas en el Product Backlog.
-![Estado inicial]()
+![image](https://user-images.githubusercontent.com/99320022/159526652-d81bc634-2298-4876-b48e-0a0cbd8b796f.png)
+![image](https://user-images.githubusercontent.com/99320022/159526708-dd468e2e-39f4-43cf-8af7-136d12323529.png)
+
 
 
 [SUBIR](#top)
