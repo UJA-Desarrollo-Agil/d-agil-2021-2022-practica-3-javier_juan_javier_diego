@@ -1,12 +1,17 @@
 body {
-    background: #170804 url("../img/page_bg.jpg") repeat-x left top;
+    background: #170804 url("../img/page_bg.jpg");
     font-family: Palatino, Times, "Times New Roman", serif;
     font-size: 18px;
     line-height: 1.6em;
     background-attachment: fixed;
     overflow-y: scroll;
+	
 }
 
+	p.dialogo {
+	color: grey;
+	font-style: italic;
+	}
 /* Basic structure */
 #page {
     margin: 0 auto;

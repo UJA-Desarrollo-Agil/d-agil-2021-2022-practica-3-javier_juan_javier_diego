@@ -29,22 +29,53 @@ undum.game.slideUpSpeed = 500
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
     start: new undum.SimpleSituation(
-        "<h1>Starting Out with Undum</h1>\
-        <img src='media/games/tutorial/woodcut1.png' class='float_right'>\
-        <p>Welcome to the Undum tutorial. Undum is a tool for writing\
-        hypertext interactive fiction. It has some unique features\
-        and a visual design that encourages narrative games.</p>\
+        "<h1>MONTACITY</h1>\
+        <img src='https://clashroyale.mundoperfecto.net/wp-content/uploads/2016/12/Montapuercos-ba%C3%B1o-Clash-Royal-Wallpaper.jpg' width='300' height='200' class='float_right'>\
+        <p>Amaneció en Monta City, ciudad donde comienza nuestra historia.\
+		Murillo despierta en su casa y procede a desayunar, cuando termina de todo decide salir a dar una vuelta,\
+		así que va a por su martillo al armario, pero al abrirlo se da cuenta de que no está.\
+		Apresurado Murillo sale de casa y lo busca por todo el vecindario, aunque nadie sabe nada.</p>\
+		\
+		<p>De repente te encuentras al Gigante Noble Ibai que te dice que ha visto algo,\
+		pero que para obtener dicha información tendrá que acertar el acertijo.</p>\
+		\
+		<center><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Kik8rQl8xT0HnoPsZS_aYiEa_lj_nYr6kpJ8CKAWp__x8MxzSPnGAWk4Qo9j_6WIg0o&usqp=CAU' width='500' height='300'></center>\
         \
-        <p>Hypertext interactive fiction is the digital equivalent of the\
-        Choose Your Own Adventure (CYOA) books that were popular in the\
-        1980s. The story is told in chunks, and you select from a range\
-        of options to move it forward. Unlike the book form, however, the\
-        digital form gives you far more flexibility to tell rich stories\
-        and introduce more interesting game elements.</p>\
+        <p class=dialogo>'¿Qué letra es la siguiente en la secuencia U-D-T-C-C-S-S-O-N-?'</p>\
+		\
+		<p>La solucion es <a href='./fallas'>M</a>.</p>\
         \
-        <p class='transient'>Click <a href='hub'>this link to\
-        continue...</a></p>"
+		<p>La solucion es <a href='./aciertas'>D</a>.</p>",
+		{
+            actions: {
+				'aciertas': "<p>Tras resolver el acertijo,recibes el dato\
+							de que a  las afueras de la ciudad vive un mago\
+							llamado Chapi que sabe todo lo del reino.</p>\
+							\
+							<p class='transient'><a href='magochapi'>Vas a ver al Mago Chapi</a>.</p>",
+							
+				'fallas': "<p>Tras no conseguir resolver el acertijo,\
+						   Murillo decideS ir a la mina donde se encuentra el\
+						   Minero Suso, para ver si sabe algo del tema.</p>\
+							\
+							<p class='transient'><a href='mina'>Vas a ver al Minero Suso</a>.</p>"
+            }
+        }
     ),
+	magochapi: new undum.SimpleSituation(
+		"<h1>CASA MAGO CHAPI</h1>\
+		<p>Vas a ver al Mago Chapi y llamas a su casa, aunque te da miedo porque es algo tenebrosa,\
+		la puerta se abre sola y entras cuidadosamente.</p>\
+		\
+		<p>Dentro llegas a una puerta y abres con nervios, ves una silla de espalda y  el mago te habla:\
+		\
+		<p class=dialogo>'Se por lo que estás aquí pero antes debes hacer una tarea para mi.'</p>\
+		\
+		<p class='transient'><a href='bosque'>Aceptas la tarea</a>.</p>\
+		\
+		<p class='transient'><a href='mina'>No aceptas la tarea</a>.</p>"
+	),
+	
 
     // NB: The 'hub' situation which is the main list of topics, is
     // defined wholly in the HTML file, and doesn't have an entry in
@@ -458,10 +489,22 @@ undum.game.qualities = {
     ),
 
     inspiration: new undum.NonZeroIntegerQuality(
-        "Inspiration", {priority:"0001", group:'progress'}
+        "Inspiration", {priority:"0001", group:'inventario'}
     ),
-    novice: new undum.OnOffQuality(
-        "Novice", {priority:"0002", group:'progress', onDisplay:"&#10003;"}
+    Llave: new undum.OnOffQuality(
+        "Llave", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
+    ),
+	morada: new undum.OnOffQuality(
+        "Pocima morada", {priority:"0003", group:'inventario', onDisplay:"&#10003;"}
+    ),
+	naranja: new undum.OnOffQuality(
+        "Pocima naranja", {priority:"0004", group:'inventario', onDisplay:"&#10003;"}
+    ),
+	negra: new undum.OnOffQuality(
+        "Pocima negra", {priority:"0005", group:'inventario', onDisplay:"&#10003;"}
+    ),
+	azul: new undum.OnOffQuality(
+        "Pocima azul", {priority:"0006", group:'inventario', onDisplay:"&#10003;"}
     )
 };
 
@@ -473,17 +516,17 @@ undum.game.qualities = {
  * non-existent group. */
 undum.game.qualityGroups = {
     stats: new undum.QualityGroup(null, {priority:"0001"}),
-    progress: new undum.QualityGroup('Progress', {priority:"0002"})
+    inventario: new undum.QualityGroup('Inventario', {priority:"0002"})
 };
 
 // ---------------------------------------------------------------------------
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
 undum.game.init = function(character, system) {
-    character.qualities.skill = 12;
-    character.qualities.stamina = 12;
-    character.qualities.luck = 0;
-    character.qualities.novice = 1;
-    character.qualities.inspiration = 0;
+    //character.qualities.skill = 12;
+    //character.qualities.stamina = 12;
+    //character.qualities.luck = 0;
+    //character.qualities.novice = 1;
+    //character.qualities.inspiration = 0;
     system.setCharacterText("<p>You are starting on an exciting journey.</p>");
 };
