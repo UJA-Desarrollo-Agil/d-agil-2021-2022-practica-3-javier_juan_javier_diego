@@ -560,5 +560,5 @@ undum.game.init = function(character, system) {
     //character.qualities.luck = 0;
     //character.qualities.novice = 1;
     //character.qualities.inspiration = 0;
-    system.setCharacterText("<p>You are starting on an exciting journey.</p>");
+    system.setCharacterText("<p></p>");
 };
