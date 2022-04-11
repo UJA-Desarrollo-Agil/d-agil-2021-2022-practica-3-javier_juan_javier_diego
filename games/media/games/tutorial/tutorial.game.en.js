@@ -92,6 +92,7 @@ undum.game.situations = {
 	),
 	bosque: new undum.SimpleSituation(
 		"<h1>BOSQUE</h1>\
+		<center><img src='media/img/bosque.jpg' width='500' height='300'></center>\
 		<p>Después de 1 hora consigues todas las flores, ves que se acerca algo volando,\
 		en ese momento alguien te empuja a un arbusto, es una chica pelirroja y te dice:</p>\
 		\
@@ -102,7 +103,8 @@ undum.game.situations = {
 		<p class='transient'><a href='vueltacasamago'>Vuelves a casa del mago</a>.</p>",
 		{
 			actions: {
-				'detalladamente' : "<p>Si miras detalladamente y observas que son pequeños murciélagos feroces\
+				'detalladamente' : "<center><img src='media/img/murcielagos.jpg' width='400' height='250'></center>\
+									<p>Si miras detalladamente y observas que son pequeños murciélagos feroces\
 									¿que haran en este bosque murcielagos?</p>"
 			}
 		}
