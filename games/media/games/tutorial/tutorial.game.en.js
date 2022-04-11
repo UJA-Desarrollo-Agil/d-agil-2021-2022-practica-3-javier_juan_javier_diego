@@ -90,6 +90,23 @@ undum.game.situations = {
             }
 		}
 	),
+	bosque: new undum.SimpleSituation(
+		"<h1>BOSQUE</h1>\
+		<p>Después de 1 hora consigues todas las flores, ves que se acerca algo volando,\
+		en ese momento alguien te empuja a un arbusto, es una chica pelirroja y te dice:</p>\
+		\
+		<p class=dialogo>'Ten más cuidado chaval, ellos pueden atraparte y capturarte, hay muchas cosas malvadas en este bosque.'</p>\
+		\
+		<p><a href='./detalladamente'>Miras detalladamente que te ataco</a>.</p>\
+		\
+		<p class='transient'><a href='vueltacasamago'>Vuelves a casa del mago</a>.</p>",
+		{
+			actions: {
+				'detalladamente' : "<p>Si miras detalladamente y observas que son pequeños murciélagos feroces\
+									¿que haran en este bosque murcielagos?</p>"
+			}
+		}
+	),
 	
 
     // NB: The 'hub' situation which is the main list of topics, is
