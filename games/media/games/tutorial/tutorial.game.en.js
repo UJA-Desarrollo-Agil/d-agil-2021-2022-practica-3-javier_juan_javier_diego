@@ -75,6 +75,21 @@ undum.game.situations = {
 		\
 		<p class='transient'><a href='mina'>No aceptas la tarea</a>.</p>"
 	),
+	mina: new undum.SimpleSituation(
+		"<h1>MINA</h1>\
+		<p>Vas a la mina a preguntar al Minero Suso si sabe algo de tu martillo.</p>\
+		\
+		<p class=dialogo>'He visto pasar al Constructor Javierlillo\
+		por el túnel que conecta con Aldea Duende y que con él llevaba un martillo,\
+		por cierto ten esta llave, es posible que te sirva.'</p>\
+		\
+		<p class='transient'><a href='aldeaduende'>Vas a la siguiente ciudad sin encontrar respuesta.</a>.</p>",
+		{
+			enter: function(character, system, to) {
+                system.setQuality("Llave", 1);
+            }
+		}
+	),
 	
 
     // NB: The 'hub' situation which is the main list of topics, is
