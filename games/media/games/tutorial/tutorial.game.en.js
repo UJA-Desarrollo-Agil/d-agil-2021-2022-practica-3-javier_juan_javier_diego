@@ -198,7 +198,27 @@ undum.game.situations = {
 		}
 	),
 	
-
+	aldeaduende: new undum.SimpleSituation(
+        "<h1>ALDEA DUENDE</h1>\
+        <p>Llegas a la aldea duende en busca de tu objetivo, el constructor Javilillo.</p>\
+        <p>Allí preguntas por él a un duende</p>\
+        \
+        <p class=dialogo>'Mi nombre es Xarly, cuidado soy un duende jijijijiji'</p>\
+        \
+        <p>El Duende Xarly sale corriendo, asi que tu sigues buscando al Constructor Javilillo</p>\
+        \
+        <p>Tras encontrar al constructor, ves que el martillo que lleva no es el tuyo y le preguntas si sabe algo</p>\
+        \
+        <p class=dialogo>'Vi a una bandada de murcielagos con un martillo encima, se dirigian a una cueva, nose que tramaran...'</p>\
+        \
+        <p class=transient><a href=cueva>Vas a la cueva</a></p>"
+    ),
+    cueva: new undum.SimpleSituation(
+        "<h1>Cueva</h1>\
+        \
+        <p>CONTINUARA</p>"
+    ),
+	
     // NB: The 'hub' situation which is the main list of topics, is
     // defined wholly in the HTML file, and doesn't have an entry in
     // the game.situations dictionary in this file.
