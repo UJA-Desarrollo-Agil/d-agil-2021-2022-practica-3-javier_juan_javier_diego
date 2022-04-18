@@ -15,6 +15,8 @@
   * 9 [Sprint 1](#sprint1)
        * 9.1 [Trello](#trello) 
        * 9.2 [Telegram](#telegram)
+  * 10 [Sprint Review](#sprint_review)
+  * 11 [Sprint Retrospective](#sprint_retrospective)
 
 <a name="indice"></a>
 ## Miembros
@@ -105,5 +107,23 @@ En este apartado, mostraremos una captura de pantalla del grupo de Telegram.
 
 ![image](https://user-images.githubusercontent.com/99321214/163881421-e4bc6668-d9a2-4817-889d-42c3ac786912.png)
 
+<a name="sprint_review"></a>
+## Sprint Review
+
+Hemos completado todas las historias de usuario que propusimos para este sprint. A continuación se muestra una tabla con observaciones sobre algunas de ellas.
+
+![image](https://user-images.githubusercontent.com/99320080/163882941-c1606abb-e337-4d70-aad0-2d21bbc8f40d.png)
+
+<a name="sprint_retrospective"></a>
+## Sprint Retrospective
+
+En esta reunión, hemos sacado las conclusiones de que tener GitHub y Trello vinculados con 
+nuestro grupo de Telegram nos ha facilitado muchísimo a la hora de llevar un control sobre lo que se ha ido 
+haciendo por parte de cada componente y así evitar un desorden.
+
+También hemos llegado a la conclusión que al tratarse de un grupo formado por amigos que se ven y 
+están todos los días juntos, no hemos tenido problema a la hora de realizar las diferentes reuniones para este Sprint.
+
+Finalmente, hemos dedicado mas tiempo en juntar todas las partes y en revisar la historia al completo, para que quede todo correctamente.
 
 [SUBIR](#top)
