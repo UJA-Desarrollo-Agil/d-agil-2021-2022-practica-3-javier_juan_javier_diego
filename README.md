@@ -4,14 +4,17 @@
 
 <a name="indice"></a>
 ## Índice
-  * [Índice](#indice)
-  * [Miembros](#miembros)
-  * [Enlaces](#enlaces)
-  * [Descripcion](#descripcion)
-  * [Personajes](#personajes)
-  * [Capturas de Trello durante el desarrollo](#capturastrello)
-  * [Vinculación Trello](#vinculacionTrello)
-  * [Vinculación GitHub](#vinculacionGithub)
+  * 1 [Índice](#indice)
+  * 2 [Miembros](#miembros)
+  * 3 [Enlaces](#enlaces)
+  * 4 [Descripcion](#descripcion)
+  * 5 [Personajes](#personajes)
+  * 6 [Capturas de Trello durante el desarrollo](#capturastrello)
+  * 7 [Vinculación Trello](#vinculacionTrello)
+  * 8 [Vinculación GitHub](#vinculacionGithub)
+  * 9 [Sprint 1](#sprint1)
+       * 9.1 [Trello](#trello) 
+       * 9.2 [Telegram](#telegram)
 
 <a name="indice"></a>
 ## Miembros
@@ -57,6 +60,50 @@ Los murciélagos, estos personajes son súbditos de la bruja Carmen que nos mole
 
 ![image](https://user-images.githubusercontent.com/99320022/159526708-dd468e2e-39f4-43cf-8af7-136d12323529.png)
 
+<a name="sprint1"></a>
+## Sprint 1
+
+El objetivo de este Sprint es la de entregar una primera versión de nuestro proyecto a través de la metodología Scrum.
+
+<a name="trello"></a>
+### Trello
+
+En primer lugar, mostraremos cómo ha quedado nuestro tablero de Trello tras realizar el Sprint 1.
+
+![image](https://user-images.githubusercontent.com/99321214/163880353-004a9f66-c41a-42f6-8ce7-5e76097a98d3.png)
+
+A continuación, mostraremos las distintas historias de usuario que tenemos en nuestro tablero de Trello.
+
+![image](https://user-images.githubusercontent.com/99321214/163879171-d549bf15-4c13-4f5b-936d-2c25dcf3eb42.png)
+
+![image](https://user-images.githubusercontent.com/99321214/163879413-db37fad9-9562-4a03-a725-d867aa84da48.png)
+
+![image](https://user-images.githubusercontent.com/99321214/163879462-f5fca834-5fa4-4518-ad18-bfc1f45bc5e2.png)
+
+![image](https://user-images.githubusercontent.com/99321214/163879596-97cd6a1c-896d-4bdd-91aa-b1232986a932.png)
+
+![image](https://user-images.githubusercontent.com/99321214/163879646-1df25ff6-3167-4137-b172-5e9c9851bfd2.png)
+
+![image](https://user-images.githubusercontent.com/99321214/163879686-8196a9f8-36d2-4df6-a3b5-246657b9b21a.png)
+
+![image](https://user-images.githubusercontent.com/99321214/163879752-309a7f71-6e51-4c5e-aad0-6c5aaeb02f6e.png)
+
+![image](https://user-images.githubusercontent.com/99321214/163879791-d01cf0be-149c-43b0-9d3f-500fb1e70caf.png)
+
+![image](https://user-images.githubusercontent.com/99321214/163879852-8279f269-86eb-4ccf-b618-1bb2287c7b18.png)
+
+![image](https://user-images.githubusercontent.com/99321214/163880075-feacf163-181b-41b7-975a-16d3bbff4d2d.png)
+
+![image](https://user-images.githubusercontent.com/99321214/163880100-dd271ac7-4df0-44d5-b67c-1e6a9addcd24.png)
+
+![image](https://user-images.githubusercontent.com/99321214/163880122-2c751746-5aa7-40fc-a940-213465da3cbe.png)
+
+<a name="telegram"></a>
+### Telegram
+
+En este apartado, mostraremos una captura de pantalla del grupo de Telegram.
+
+![image](https://user-images.githubusercontent.com/99321214/163881421-e4bc6668-d9a2-4817-889d-42c3ac786912.png)
 
 
 [SUBIR](#top)
