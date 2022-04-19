@@ -39,7 +39,7 @@ undum.game.situations = {
 		<p>De repente te encuentras al Gigante Noble Ibai que te dice que ha visto algo,\
 		pero que para obtener dicha información tendrá que acertar el acertijo.</p>\
 		\
-		<center><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Kik8rQl8xT0HnoPsZS_aYiEa_lj_nYr6kpJ8CKAWp__x8MxzSPnGAWk4Qo9j_6WIg0o&usqp=CAU' width='500' height='300'></center>\
+		<center><img src='https://c.tenor.com/u0GH3fPRyT8AAAAC/ibai-gigante.gif' width='450' height='300'></center>\
         \
         <p class=dialogo>'¿Qué letra es la siguiente en la secuencia U-D-T-C-C-S-S-O-N-?'</p>\
 		\
@@ -92,7 +92,7 @@ undum.game.situations = {
 	),
 	bosque: new undum.SimpleSituation(
 		"<h1>BOSQUE</h1>\
-		<center><img src='media/img/bosque.jpg' width='500' height='300'></center>\
+		<center><img src='media/img/bosque.jpg' width='450' height='300'></center>\
 		<p>Después de 1 hora consigues todas las flores, ves que se acerca algo volando,\
 		en ese momento alguien te empuja a un arbusto, es una chica pelirroja y te dice:</p>\
 		\

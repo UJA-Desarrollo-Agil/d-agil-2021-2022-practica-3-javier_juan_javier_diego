@@ -39,7 +39,7 @@ undum.game.situations = {
 		<p>De repente te encuentras al Gigante Noble Ibai que te dice que ha visto algo,\
 		pero que para obtener dicha información tendrá que acertar el acertijo.</p>\
 		\
-		<center><img src='https://c.tenor.com/u0GH3fPRyT8AAAAC/ibai-gigante.gif' width='500' height='300' class='center'></center>\
+		<center><img src='https://c.tenor.com/u0GH3fPRyT8AAAAC/ibai-gigante.gif' width='450' height='300'></center>\
         \
         <p class=dialogo>'¿Qué letra es la siguiente en la secuencia U-D-T-C-C-S-S-O-N-?'</p>\
 		\
@@ -110,7 +110,115 @@ undum.game.situations = {
 		}
 	),
 	
-
+	vueltacasamago: new undum.SimpleSituation(
+		"<h1>VUELVES A CASA DEL MAGO CHAPI</h1>\
+		<p>El mago prepara unas pócimas mientras esperas, ansioso le preguntas que dónde está tu martillo.</p>\
+		\
+		<p>El mago te da a elegir 1 de las 4 pócimas que preparó.</p>\
+		\
+		<p class='transient'><a href='morada'>Eliges la morada</a>.</p>\
+		<p class='transient'><a href='naranja'>Eliges la naranja</a>.</p>\
+		<p class='transient'><a href='negra'>Eliges la negra</a>.</p>\
+		<p class='transient'><a href='azul'>Eliges la azul</a>.</p>",
+		{
+			actions: {
+				"morada": function(character, system, action) {
+                    system.setQuality("morada", 1);
+                },
+				"naranja": function(character, system, action) {
+                    system.setQuality("naranja", 1);
+                },
+				"negra": function(character, system, action) {
+                    system.setQuality("negra", 1);
+                },
+				"azul": function(character, system, action) {
+                    system.setQuality("azul", 1);
+                }
+			}
+		}
+	),
+	morada: new undum.SimpleSituation(
+		"<p>El Mago Chapi procede a explicarte para que te servira la pocima:</p>\
+		\
+		<p class=dialogo>'Puedes arrojarla, producirá furia para luchar y asi tener rapidez y fuerza sobre tus enemigos.'</p>\
+		\
+		<p>El mago te dice que tu siguiente destino será la Aldea Duende donde tendrás que buscar al constructor Javilillo,\
+		pero que tendrás que tener cuidado porque habrá dificultades a partir de ese instante.</p>\
+		\
+		<p class=transient><a href=aldeaduende>Ir a Aldea Duende</a></p>",
+		{
+			enter: function(character, system, to) {
+                system.setQuality("morada", 1);
+            }
+		}
+	),
+	naranja: new undum.SimpleSituation(
+		"<p>El Mago Chapi procede a explicarte para que te servira la pocima:</p>\
+		\
+		<p class=dialogo>'Puedes arrojarla, producirá envenenamiento que no matara solo los debilitara.'</p>\
+		\
+		<p>El mago te dice que tu siguiente destino será la Aldea Duende donde tendrás que buscar al constructor Javilillo,\
+		pero que tendrás que tener cuidado porque habrá dificultades a partir de ese instante.</p>\
+		\
+		<p class=transient><a href=aldeaduende>Ir a Aldea Duende</a></p>",
+		{
+			enter: function(character, system, to) {
+                system.setQuality("naranja", 1);
+            }
+		}
+	),
+	negra: new undum.SimpleSituation(
+		"<p>El Mago Chapi procede a explicarte para que te servira la pocima:</p>\
+		\
+		<p class=dialogo>'Puedes arrojarla,producirá mareos y sueño.'</p>\
+		\
+		<p>El mago te dice que tu siguiente destino será la Aldea Duende donde tendrás que buscar al constructor Javilillo,\
+		pero que tendrás que tener cuidado porque habrá dificultades a partir de ese instante.</p>\
+		\
+		<p class=transient><a href=aldeaduende>Ir a Aldea Duende</a></p>",
+		{
+			enter: function(character, system, to) {
+                system.setQuality("negra", 1);
+            }
+		}
+	),
+	azul: new undum.SimpleSituation(
+		"<p>El Mago Chapi procede a explicarte para que te servira la pocima:</p>\
+		\
+		<p class=dialogo>'Puedes arrojarla,congelera'</p>\
+		\
+		<p>El mago te dice que tu siguiente destino será la Aldea Duende donde tendrás que buscar al constructor Javilillo,\
+		pero que tendrás que tener cuidado porque habrá dificultades a partir de ese instante.</p>\
+		\
+		<p class=transient><a href=aldeaduende>Ir a Aldea Duende</a></p>",
+		{
+			enter: function(character, system, to) {
+                system.setQuality("azul", 1);
+            }
+		}
+	),
+	
+	aldeaduende: new undum.SimpleSituation(
+        "<h1>ALDEA DUENDE</h1>\
+        <p>Llegas a la aldea duende en busca de tu objetivo, el constructor Javilillo.</p>\
+        <p>Allí preguntas por él a un duende</p>\
+        \
+        <p class=dialogo>'Mi nombre es Xarly, cuidado soy un duende jijijijiji'</p>\
+        \
+        <p>El Duende Xarly sale corriendo, asi que tu sigues buscando al Constructor Javilillo</p>\
+        \
+        <p>Tras encontrar al constructor, ves que el martillo que lleva no es el tuyo y le preguntas si sabe algo</p>\
+        \
+        <p class=dialogo>'Vi a una bandada de murcielagos con un martillo encima, se dirigian a una cueva, nose que tramaran...'</p>\
+        \
+        <p class=transient><a href=cueva>Vas a la cueva</a></p>"
+    ),
+    cueva: new undum.SimpleSituation(
+        "<h1>Cueva</h1>\
+        \
+        <p>CONTINUARA</p>"
+    ),
+	
     // NB: The 'hub' situation which is the main list of topics, is
     // defined wholly in the HTML file, and doesn't have an entry in
     // the game.situations dictionary in this file.
