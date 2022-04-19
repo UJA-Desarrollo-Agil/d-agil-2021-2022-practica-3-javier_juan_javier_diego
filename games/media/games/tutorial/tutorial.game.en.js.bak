@@ -92,7 +92,7 @@ undum.game.situations = {
 	),
 	bosque: new undum.SimpleSituation(
 		"<h1>BOSQUE</h1>\
-		<center><img src='media/img/bosque.jpg' width='450' height='300'></center>\
+		<center><img src='media/img/bosque.jpg' width='500' height='300'></center>\
 		<p>Después de 1 hora consigues todas las flores, ves que se acerca algo volando,\
 		en ese momento alguien te empuja a un arbusto, es una chica pelirroja y te dice:</p>\
 		\

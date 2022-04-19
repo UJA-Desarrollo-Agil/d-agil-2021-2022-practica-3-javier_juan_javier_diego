@@ -1,10 +1,9 @@
-body {
-    background: #170804 url("../img/page_bg.jpg") repeat-x left top;
-    font-family: Palatino, Times, "Times New Roman", serif;
-    font-size: 18px;
-    line-height: 1.6em;
-    background-attachment: fixed;
-    overflow-y: scroll;
+body{
+background: #170804 url("https://i.pinimg.com/originals/7a/78/05/7a78056422ee7febbbb6047e2c484844.gif") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 
 /* Basic structure */
@@ -22,10 +21,9 @@ body {
 }
 #title {
     max-width: 28em;
-    background: #e6e6c6 url("../img/title_bg.jpg") repeat -1.1em -1.1em;
     margin: 2.2em auto 1.1em auto;
     padding: 1.7em;
-    border: 1.1em solid rgba(0,0,0,0.25);
+    border: 1.1em solid rgba(0,0,0,0);
     cursor: pointer; /* Until we click to start. */
 }
 #title .label {
@@ -91,7 +89,10 @@ body {
     text-align: center;
     color: #943;
 }
-
+p.dialogo {
+  color: grey;
+  font-style: italic;
+}
 /* Main content */
 #content_wrapper {
     max-width: 28em;
@@ -209,7 +210,7 @@ img.float_left {
 }
 .tools {
     padding: 0.6em;
-    width: 8.9em;
+    width: 10.0em;
     background: #cec3ae url("../img/tools_bg.jpg") repeat left top;
     position: absolute;
 }
@@ -218,10 +219,10 @@ img.float_left {
     line-height: 1.5em;
 }
 .tools.left {
-    left: 0.4em;
+    left: -1.2em;
 }
 .tools.right {
-    right: 0.4em;
+    right: -1.2em;
 }
 
 .tools h1 {
