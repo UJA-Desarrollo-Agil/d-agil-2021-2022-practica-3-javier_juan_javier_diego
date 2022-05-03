@@ -225,15 +225,62 @@ undum.game.situations = {
 			actions: {
                 "entrarcueva": function(character, system, action) {
                     if(character.qualities.Llave == 1){
-						system.write("<p><a href='tienesllave'>Espera, hay una especie de ranura.</a></p>");
+						system.write("<p><a href=tienesllave>Espera, hay una especie de ranura.</a></p>");
 					}else{
-						system.write("<p><a href='notienesllave'>¿Qué ocultara la cueva?</a></p>");
+						system.write("<p><a href=notienesllave>¿Qué ocultara la cueva?</a></p>");
 					}
 				}
 			}
 		}
     ),
-	
+	tienesllave: new undum.SimpleSituation(
+		"<p>La ranura escondia una puerta que da acceso a un camino secreto, que solo se puede abrir si tienes la llave maestra del minero Suso.</p>\
+		\
+		<p>Gracias a la llave del minero utilizais un camino secreto creado por él y evitais los peligros de la tenebrosa cueva.</p>\
+		\
+		<p class=transient><a href=castillo>Continuais vuestro camino</a></p>"
+	),
+	notienesllave: new undum.SimpleSituation(
+		"<p>Decidis avanzar por la cueva afrontando todos los peligros.</p>\
+		\
+		<p>En el camino te encuentras al lanzarrocas que te desafia a luchar.</p>\
+		\
+		<p>Luchais contra el lanzarrocas y los murciélagos pero al ser ellos tan fuertes y el lanzarrocas tener tantas rocas para lanzar necesitáis tomaros una poción.</p>\
+		\
+		<p class=transient><a href='./pocimas'>Coges la pocion</a></p>",
+		{
+			actions: {
+                "pocimas": function(character, system, action) {
+                    if(character.qualities.negra == 1){
+						system.setQuality("negra", 0);
+						system.write("<p>La pocion elegida tira sueño y mareos para tus enemigos. Tus enemigos <a href=castillo>son derrotados</a></p>");
+					}else{
+						if(character.qualities.azul == 1){
+							system.setQuality("azul", );
+							system.write("<p>La pocion elegida tira hielo y congela a tus enemigos. Tus enemigos <a href=castillo>son derrotados</a></p>");
+							
+						}else{
+							if(character.qualities.morada == 1){
+								system.setQuality("morada", 0);
+								system.write("<p>La pocion elegida os da furia, es decir fuerza y rapidez para acabar con los enemigos. Tus enemigos <a href=castillo>son derrotados</a></p>");
+							}else{
+								if(character.qualities.naranja == 1){
+									system.setQuality("naranja", 0);
+									system.write("<p>La pocion elegida tira veneno para acabar con los enemigos. Tus enemigos <a href=castillo>son derrotados</a></p>");
+								}
+							}
+						}
+					
+					}
+				}
+			}
+		}
+	),
+	castillo: new undum.SimpleSituation(
+		"<h1>castillo</h1>\
+        \
+        <p>CONTINUARA</p>"
+	),
     // NB: The 'hub' situation which is the main list of topics, is
     // defined wholly in the HTML file, and doesn't have an entry in
     // the game.situations dictionary in this file.
