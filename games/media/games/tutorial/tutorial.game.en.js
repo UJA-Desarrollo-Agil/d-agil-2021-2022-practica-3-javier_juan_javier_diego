@@ -216,7 +216,22 @@ undum.game.situations = {
     cueva: new undum.SimpleSituation(
         "<h1>Cueva</h1>\
         \
-        <p>CONTINUARA</p>"
+        <p>La llegar a la cueva te encuentras a una chica pelirroja, te pregunta a dónde vas y le cuenta tu historia, decide acompañarte y se presenta:</p>\
+		\
+		<p class=dialogo>'Yo soy Lidia la valquiria, soy una justiciera y voy a derrotar a la bruja, ella tendrá tu martillo, vayamos a por ella'</p>\
+		\
+		<p class=transient><a href='./entrarcueva'>Entras a la cueva.</p>",
+		{
+			actions: {
+                "entrarcueva": function(character, system, action) {
+                    if(character.qualities.Llave == 1){
+						system.write("<p><a href='tienesllave'>Espera, hay una especie de ranura.</a></p>");
+					}else{
+						system.write("<p><a href='notienesllave'>¿Qué ocultara la cueva?</a></p>");
+					}
+				}
+			}
+		}
     ),
 	
     // NB: The 'hub' situation which is the main list of topics, is
