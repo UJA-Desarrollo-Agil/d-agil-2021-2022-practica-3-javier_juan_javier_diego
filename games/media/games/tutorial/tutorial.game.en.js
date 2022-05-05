@@ -278,8 +278,15 @@ undum.game.situations = {
 	),
 	castillo: new undum.SimpleSituation(
 		"<h1>castillo</h1>\
-        \
-        <p>CONTINUARA</p>"
+		<p>Llegas al Castillo de la bruja, la puerta está abierta y entrais cuidadosamente.</p>\
+		\
+		<p>La puerta se cierra de un portazo, y se escucha una risa malvada, desde las escaleras la bruja Carmen hace su aparición y os dais cuenta que caísteis en su trampa.</p>\
+		\
+		<center><img src='media/img/brujaCarmen.jpg' width='450' height='300'></center>\
+		\
+		<p>Es una trampilla falsa que os hace caer hacia un Arena.</p>\
+		\
+		<p class=transient><a href='arenareal'>arena real</a></p>"
 	),
     // NB: The 'hub' situation which is the main list of topics, is
     // defined wholly in the HTML file, and doesn't have an entry in
