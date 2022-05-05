@@ -278,15 +278,48 @@ undum.game.situations = {
 	),
 	castillo: new undum.SimpleSituation(
 		"<h1>castillo</h1>\
-		<p>Llegas al Castillo de la bruja, la puerta está abierta y entrais cuidadosamente.</p>\
+		<p>Desde una torre central la bruja Carmen os presenta la Arena Real donde os aparecerán enemigos a derrotar.\
+		Los enemigos serán un montón de esqueletos dispuestos a acabar con tu vida pero vas a tener que enfrentarte a ellos si quieres seguir en tu camino de recuperar el martillo.</p>\
 		\
 		<p>La puerta se cierra de un portazo, y se escucha una risa malvada, desde las escaleras la bruja Carmen hace su aparición y os dais cuenta que caísteis en su trampa.</p>\
 		\
 		<center><img src='media/img/brujaCarmen.jpg' width='450' height='300'></center>\
 		\
-		<p>Es una trampilla falsa que os hace caer hacia un Arena.</p>\
+		<p>Es una trampilla falsa que os hace caer hacia la Arena.</p>\
 		\
-		<p class=transient><a href='arenareal'>arena real</a></p>"
+		<p class=transient><a href='arenareal'>Ir a la arena Real</a></p>"
+	),
+	arenareal: new undum.SimpleSituation(
+		"<h1>Arena real</h1>\
+		<p>Desde una torre central la bruja Carmen os presenta la Arena Real donde os aparecerán enemigos a derrotar.</p>\
+		\
+		<p>Los enemigos son un montón de esqueletos dispuestos a acabar con tu vida pero vas a tener que enfrentarte a ellos si quieres seguir en tu camino de recuperar el martillo.</p>\
+		\
+		<center><img src='media/img/esqueletos.jpeg' width='450' height='300'></center>\
+		\
+		<p class=transient><a href=fuerte>Realizar ataque fuerte</a></p>\
+		\
+		<p class=transient><a href=debil>Realizar ataque debil</a></p>"
+	),
+	fuerte: new undum.SimpleSituation(
+		"<p>Tras realizar el golpe fuerte acabas con la mayoría de ellos pero, tendrás que hacer otro\
+		ataque si quieres acabar con ellos completamente.</p>\
+		\
+		<p class=transient><a href=atacar>Volver a atacar</a></p>"
+	),
+	debil: new undum.SimpleSituation(
+		"<p>Te quitas unos pocos enemigos pero al ser ellos muchos más, te atacan en el brazo con lo que acabarás malherido de la batalla,\
+		tras un par de segundos te recuperas e intentarás volver a atacar para acabar con todos ellos.</p>\
+		\
+		<p class=transient><a href=atacar>Volver a atacar</a></p>"
+	),
+	atacar: new undum.SimpleSituation(
+		"<p>Tras realizar otro ataque, todos los esqueletos han sido derrotados y la bruja con cara de preocupación vuelve al castillo. \
+		Intentamos seguirla y en el camino os encontráis una puerta.</p>\
+		<p class=transient><a href=puerta>Abrir puerta</a></p>"
+	),
+	puerta: new undum.SimpleSituation(
+		"<p>CONTINUARA</p>"
 	),
     // NB: The 'hub' situation which is the main list of topics, is
     // defined wholly in the HTML file, and doesn't have an entry in
