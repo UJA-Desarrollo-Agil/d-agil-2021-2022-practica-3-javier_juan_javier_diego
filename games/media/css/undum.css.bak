@@ -355,7 +355,7 @@ img.float_left {
 	color:#333;
 }
 .es{
-	color:#333;
+	color:#00ff00;
 }
 .check{
 	position:relative;

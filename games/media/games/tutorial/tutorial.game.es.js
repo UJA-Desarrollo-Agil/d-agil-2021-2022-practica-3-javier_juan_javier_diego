@@ -31,59 +31,59 @@ undum.game.situations = {
     start: new undum.SimpleSituation(
         "<h1>MONTACITY</h1>\
         <img src='https://clashroyale.mundoperfecto.net/wp-content/uploads/2016/12/Montapuercos-ba%C3%B1o-Clash-Royal-Wallpaper.jpg' width='300' height='200' class='float_right'>\
-        <p>Amaneció en Monta City, ciudad donde comienza nuestra historia.\
-		<a href='https://clashofclans.fandom.com/es/wiki/Montapuerco'target=”_blank”>Murillo</a> despierta en su casa y procede a desayunar, cuando termina de todo decide salir a dar una vuelta,\
-		así que va a por su martillo al armario, pero al abrirlo se da cuenta de que no está.\
-		Apresurado Murillo sale de casa y lo busca por todo el vecindario, aunque nadie sabe nada.</p>\
+        <p>It dawned in Monta City, the city where our story begins.\
+		Murillo wakes up at home and proceeds to have breakfast, when he finishes everything he decides to go out for a walk,\
+		so he goes to get his hammer from the closet, but when he opens it he realizes that it is not there.\
+		Murillo leaves the house in a hurry and looks for him throughout the neighborhood, although nobody knows anything.</p>\
 		\
-		<p>De repente te encuentras al <a href='https://clashroyale.fandom.com/es/wiki/Gigante_noble'target=”_blank”>Gigante Noble Ibai</a> que te dice que ha visto algo,\
-		pero que para obtener dicha información tendrá que acertar el acertijo.</p>\
+		<p>Suddenly you meet the Giant Noble Ibai who tells you that he has seen something,\
+		but that in order to obtain this information, he will have to get the riddle right.</p>\
 		\
 		<center><img src='https://c.tenor.com/u0GH3fPRyT8AAAAC/ibai-gigante.gif' width='450' height='300'></center>\
         \
-        <p class=dialogo>'¿Qué letra es la siguiente en la secuencia U-D-T-C-C-S-S-O-N-?'</p>\
+        <p class=dialogo>'What letter is next in the sequence U-D-T-C-C-S-S-O-N-?'</p>\
 		\
-		<p>La solucion es <a href='./fallas'>M</a>.</p>\
+		<p>The solution is <a href='./fallas'>M</a>.</p>\
         \
-		<p>La solucion es <a href='./aciertas'>D</a>.</p>",
+		<p>The solution is <a href='./aciertas'>D</a>.</p>",
 		{
             actions: {
-				'aciertas': "<p>Tras resolver el acertijo,recibes el dato\
-							de que a  las afueras de la ciudad vive un mago\
-							llamado Chapi que sabe todo lo del reino.</p>\
+				'aciertas': "<p>After solving the puzzle, you receive the data\
+								that a magician lives on the outskirts of the city\
+								called Chapi who knows everything about the kingdom.</p>\
 							\
-							<p class='transient'><a href='magochapi'>Vas a ver al Mago Chapi</a>.</p>",
+							<p class='transient'><a href='magochapi'>You are going to see the Magician Chapi</a>.</p>",
 							
-				'fallas': "<p>Tras no conseguir resolver el acertijo,\
-						   Murillo decideS ir a la mina donde se encuentra el\
-						   Minero Suso, para ver si sabe algo del tema.</p>\
+				'fallas': "<p>After failing to solve the puzzle,\
+								Murillo decides to go to the mine where the\
+								Minero Suso, to see if he knows anything about it.</p>\
 							\
-							<p class='transient'><a href='mina'>Vas a ver al Minero Suso</a>.</p>"
+							<p class='transient'><a href='mina'>You are going to see Miner Suso</a>.</p>"
             }
         }
     ),
 	magochapi: new undum.SimpleSituation(
-		"<h1>CASA DEL MAGO CHAPI</h1>\
-		<p>Vas a ver al <a href='https://clashroyale.fandom.com/es/wiki/Mago'target=”_blank”>Mago Chapi</a> y llamas a su casa, aunque te da miedo porque es algo tenebrosa,\
-		la puerta se abre sola y entras cuidadosamente.</p>\
+		"<h1>HOUSE OF THE MAGICIAN CHAPI</h1>\
+		<p>You go to see the Magician Chapi and you call his house, although it scares you because it's a bit dark,\
+		the door opens by itself and you carefully enter.</p>\
 		\
-		<p>Dentro llegas a una puerta y abres con nervios, ves una silla de espalda y  el mago te habla:\
+		<p>Inside you come to a door and open it nervously, you see a chair with its back turned and the magician speaks to you:\
 		\
-		<p class=dialogo>'Se por lo que estás aquí pero antes debes hacer una tarea para mi.'</p>\
+		<p class=dialogo>'I know why you're here, but first you have to do a task for me.'</p>\
 		\
-		<p class='transient'><a href='bosque'>Aceptas la tarea</a>.</p>\
+		<p class='transient'><a href='bosque'>You accept the task</a>.</p>\
 		\
-		<p class='transient'><a href='mina'>No aceptas la tarea</a>.</p>"
+		<p class='transient'><a href='mina'>You reject the task</a>.</p>"
 	),
 	mina: new undum.SimpleSituation(
-		"<h1>MINA</h1>\
-		<p>Vas a la mina a preguntar al <a href='https://clashroyale.fandom.com/es/wiki/Minero'target=”_blank”>Minero Suso</a> si sabe algo de tu martillo.</p>\
+		"<h1>MINE</h1>\
+		<p>You go to the mine to ask Miner Suso if he knows anything about your hammer.</p>\
 		\
-		<p class=dialogo>'He visto pasar al <a href='https://clashofclans.fandom.com/es/wiki/Constructor'target=”_blank”>Constructor Javierlillo</a>\
-		por el túnel que conecta con Aldea Duende y que con él llevaba un martillo,\
-		por cierto ten esta llave, es posible que te sirva.'</p>\
+		<p class=dialogo>'I have seen the Builder Javierlillo go by\
+		through the tunnel that connects with Goblin Village and that he carried a hammer with him,\
+		By the way, have this key, it may help you.'</p>\
 		\
-		<p class='transient'><a href='aldeaduende'>Vas a la siguiente ciudad sin encontrar respuesta.</a>.</p>",
+		<p class='transient'><a href='aldeaduende'>You go to the next city without finding an answer.</a>.</p>",
 		{
 			enter: function(character, system, to) {
                 system.setQuality("Llave", 1);
@@ -91,35 +91,35 @@ undum.game.situations = {
 		}
 	),
 	bosque: new undum.SimpleSituation(
-		"<h1>BOSQUE</h1>\
+		"<h1>FOREST</h1>\
 		<center><img src='media/img/bosque.jpg' width='450' height='300'></center>\
-		<p>Después de 1 hora consigues todas las flores, ves que se acerca algo volando,\
-		en ese momento alguien te empuja a un arbusto, es una chica pelirroja y te dice:</p>\
+		<p>After 1 hour you get all the flowers, you see something flying,\
+		at that moment someone pushes you into a bush, she is a red-haired girl and says:</p>\
 		\
-		<p class=dialogo>'Ten más cuidado chaval, ellos pueden atraparte y capturarte, hay muchas cosas malvadas en este bosque.'</p>\
+		<p class=dialogo>'Be more careful kid, they can catch and capture you, there are many evil things in this forest.'</p>\
 		\
-		<p><a href='./detalladamente'>Miras detalladamente que te ataco</a>.</p>\
+		<p><a href='./detalladamente'>You look closely that I attack you</a>.</p>\
 		\
-		<p class='transient'><a href='vueltacasamago'>Vuelves a casa del mago</a>.</p>",
+		<p class='transient'><a href='vueltacasamago'>You return to the magician's house</a>.</p>",
 		{
 			actions: {
 				'detalladamente' : "<center><img src='media/img/murcielagos.jpg' width='400' height='250'></center>\
-									<p>Si miras detalladamente y observas que son pequeños murciélagos feroces\
-									¿que haran en este bosque murcielagos?</p>"
+									<p>If you look closely and see that they are ferocious little bats\
+									What will bats do in this forest?</p>"
 			}
 		}
 	),
 	
 	vueltacasamago: new undum.SimpleSituation(
-		"<h1>VUELVES A CASA DEL MAGO CHAPI</h1>\
-		<p>El mago prepara unas pócimas mientras esperas, ansioso le preguntas que dónde está tu martillo.</p>\
+		"<h1>YOU COME BACK TO THE HOUSE OF THE MAGICIAN CHAPI</h1>\
+		<p>The magician prepares some potions while you wait, anxiously you ask him where your hammer is.</p>\
 		\
-		<p>El mago te da a elegir 1 de las 4 pócimas que preparó.</p>\
+		<p>The wizard gives you a choice of 1 of the 4 potions he prepared.</p>\
 		\
-		<p class='transient'><a href='morada'>Eliges la morada</a>.</p>\
-		<p class='transient'><a href='naranja'>Eliges la naranja</a>.</p>\
-		<p class='transient'><a href='negra'>Eliges la negra</a>.</p>\
-		<p class='transient'><a href='azul'>Eliges la azul</a>.</p>",
+		<p class='transient'><a href='morada'>You choose the purple</a>.</p>\
+		<p class='transient'><a href='naranja'>You choose the orange</a>.</p>\
+		<p class='transient'><a href='negra'>You choose the black</a>.</p>\
+		<p class='transient'><a href='azul'>You choose the blue</a>.</p>",
 		{
 			actions: {
 				"morada": function(character, system, action) {
@@ -138,14 +138,14 @@ undum.game.situations = {
 		}
 	),
 	morada: new undum.SimpleSituation(
-		"<p>El Mago Chapi procede a explicarte para que te servira la pocima:</p>\
+		"<p>The Magician Chapi proceeds to explain what the potion will serve you:</p>\
 		\
-		<p class=dialogo>'Puedes arrojarla, producirá furia para luchar y asi tener rapidez y fuerza sobre tus enemigos.'</p>\
+		<p class=dialogo>'You can throw, it will produce fury to fight and thus have speed and strength over your enemies.'</p>\
 		\
-		<p>El mago te dice que tu siguiente destino será la Aldea Duende donde tendrás que buscar al constructor Javilillo,\
-		pero que tendrás que tener cuidado porque habrá dificultades a partir de ese instante.</p>\
+		<p>The magician tells you that your next destination will be the Duende Village where you will have to look for the builder Javilillo,\
+		but that you will have to be careful because there will be difficulties from that moment on.</p>\
 		\
-		<p class=transient><a href=aldeaduende>Ir a Aldea Duende</a></p>",
+		<p class=transient><a href=aldeaduende></a>Go to Goblin Village</p>",
 		{
 			enter: function(character, system, to) {
                 system.setQuality("morada", 1);
@@ -153,14 +153,14 @@ undum.game.situations = {
 		}
 	),
 	naranja: new undum.SimpleSituation(
-		"<p>El Mago Chapi procede a explicarte para que te servira la pocima:</p>\
+		"<p>The Magician Chapi proceeds to explain what the potion will serve you:</p>\
 		\
-		<p class=dialogo>'Puedes arrojarla, producirá envenenamiento que no matara solo los debilitara.'</p>\
+		<p class=dialogo>'You can throw, it will produce poison that does not kill it only weakens them.'</p>\
 		\
-		<p>El mago te dice que tu siguiente destino será la Aldea Duende donde tendrás que buscar al constructor Javilillo,\
-		pero que tendrás que tener cuidado porque habrá dificultades a partir de ese instante.</p>\
+		<p>The magician tells you that your next destination will be the Duende Village where you will have to look for the builder Javilillo,\
+		but that you will have to be careful because there will be difficulties from that moment on.</p>\
 		\
-		<p class=transient><a href=aldeaduende>Ir a Aldea Duende</a></p>",
+		<p class=transient><a href=aldeaduende></a>Go to Goblin Village</p>",
 		{
 			enter: function(character, system, to) {
                 system.setQuality("naranja", 1);
@@ -168,14 +168,14 @@ undum.game.situations = {
 		}
 	),
 	negra: new undum.SimpleSituation(
-		"<p>El Mago Chapi procede a explicarte para que te servira la pocima:</p>\
+		"<p>The Magician Chapi proceeds to explain what the potion will serve you:</p>\
 		\
-		<p class=dialogo>'Puedes arrojarla,producirá mareos y sueño.'</p>\
+		<p class=dialogo>'You can throw, it produces dizziness and sleep.'</p>\
 		\
-		<p>El mago te dice que tu siguiente destino será la Aldea Duende donde tendrás que buscar al constructor Javilillo,\
-		pero que tendrás que tener cuidado porque habrá dificultades a partir de ese instante.</p>\
+		<p>The magician tells you that your next destination will be the Duende Village where you will have to look for the builder Javilillo,\
+		but that you will have to be careful because there will be difficulties from that moment on.</p>\
 		\
-		<p class=transient><a href=aldeaduende>Ir a Aldea Duende</a></p>",
+		<p class=transient><a href=aldeaduende></a>Go to Goblin Village</p>",
 		{
 			enter: function(character, system, to) {
                 system.setQuality("negra", 1);
@@ -183,14 +183,14 @@ undum.game.situations = {
 		}
 	),
 	azul: new undum.SimpleSituation(
-		"<p>El Mago Chapi procede a explicarte para que te servira la pocima:</p>\
+		"<p>The Magician Chapi proceeds to explain what the potion will serve you:</p>\
 		\
-		<p class=dialogo>'Puedes arrojarla,congelera'</p>\
+		<p class=dialogo>'You can throw and freeze'</p>\
 		\
-		<p>El mago te dice que tu siguiente destino será la Aldea Duende donde tendrás que buscar al constructor Javilillo,\
-		pero que tendrás que tener cuidado porque habrá dificultades a partir de ese instante.</p>\
+		<p>The magician tells you that your next destination will be the Duende Village where you will have to look for the builder Javilillo,\
+		but that you will have to be careful because there will be difficulties from that moment on.</p>\
 		\
-		<p class=transient><a href=aldeaduende>Ir a Aldea Duende</a></p>",
+		<p class=transient><a href=aldeaduende></a>Go to Goblin Village</p>",
 		{
 			enter: function(character, system, to) {
                 system.setQuality("azul", 1);
@@ -199,74 +199,74 @@ undum.game.situations = {
 	),
 	
 	aldeaduende: new undum.SimpleSituation(
-        "<h1>ALDEA DUENDE</h1>\
-        <p>Llegas a la aldea duende en busca de tu objetivo, el constructor Javilillo.</p>\
-        <p>Allí preguntas por él a un duende</p>\
+        "<h1>GOBLIN VILLAGE</h1>\
+        <p>You arrive at the goblin village in search of your target, the builder Javilillo.</p>\
+        <p>There you ask a goblin about him</p>\
         \
-        <p class=dialogo>'Mi nombre es ,<a href='https://clashroyale.fandom.com/es/wiki/Duende'target=”_blank”>Xarly</a> cuidado soy un duende jijijijiji'</p>\
+        <p class=dialogo>'My name is Xarly, be careful I'm a leprechaun jijijijiji'</p>\
         \
-        <p>El Duende Xarly sale corriendo, asi que tu sigues buscando al Constructor Javilillo</p>\
+        <p>The Goblin Xarly runs away, so you keep looking for the Builder Javilillo</p>\
         \
-        <p>Tras encontrar al constructor, ves que el martillo que lleva no es el tuyo y le preguntas si sabe algo</p>\
+        <p> After finding the builder, you see that the hammer he is carrying is not yours and ask him if he knows anything </ p> \
         \
-        <p class=dialogo>'Vi a una bandada de murcielagos con un martillo encima, se dirigian a una cueva, nose que tramaran...'</p>\
+        <p class=dialogo>'I saw a flock of bats with a hammer on them, they were heading to a cave, I don't know what they were up to...'</p>\
         \
-        <p class=transient><a href=cueva>Vas a la cueva</a></p>"
+        <p class=transient><a href=cueva>You go to the cave</a></p>"
     ),
     cueva: new undum.SimpleSituation(
-        "<h1>CUEVA</h1>\
+        "<h1>CAVE</h1>\
         \
-        <p>La llegar a la cueva te encuentras a una chica pelirroja, te pregunta a dónde vas y le cuenta tu historia, decide acompañarte y se presenta:</p>\
+        <p>When you get to the cave you meet a red-haired girl, she asks you where you are going and tells her your story, she decides to accompany you and introduces herself:</p>\
 		\
-		<p class=dialogo>'Yo soy <a href='https://clashroyale.fandom.com/es/wiki/Valquiria'target=”_blank”>Lidia la Valquiria</a>, soy una justiciera y voy a derrotar a la bruja, ella tendrá tu martillo, vayamos a por ella'</p>\
+		<p class=dialogo>'I am Lidia the Valkyrie, I am a vigilante and I am going to defeat the witch, she will have your hammer, let's go get her'</p>\
 		\
-		<p class=transient><a href='./entrarcueva'>Entras a la cueva.</p>",
+		<p class=transient><a href='./entrarcueva'>You enter the cave.</p>",
 		{
 			actions: {
                 "entrarcueva": function(character, system, action) {
                     if(character.qualities.Llave == 1){
-						system.write("<p><a href=tienesllave>Espera, hay una especie de ranura.</a></p>");
+						system.write("<p><a href=tienesllave></a>Wait, there's some kind of slot.</p>");
 					}else{
-						system.write("<p><a href=notienesllave>¿Qué ocultara la cueva?</a></p>");
+						system.write("<p><a href=notienesllave>What will the cave hide?</a></p>");
 					}
 				}
 			}
 		}
     ),
 	tienesllave: new undum.SimpleSituation(
-		"<p>La ranura escondia una puerta que da acceso a un camino secreto, que solo se puede abrir si tienes la llave maestra del minero Suso.</p>\
+		"<p>The slot hid a door that gives access to a secret path, which can only be opened if you have the miner Suso's master key.</p>\
 		\
-		<p>Gracias a la llave del minero utilizais un camino secreto creado por él y evitais los peligros de la tenebrosa cueva.</p>\
+		<p>Thanks to the miner's key you use a secret path created by him and avoid the dangers of the dark cave.</p>\
 		\
-		<p class=transient><a href=castillo>Continuais vuestro camino</a></p>"
+		<p class=transient><a href=castillo>You continue on your way</a></p>"
 	),
 	notienesllave: new undum.SimpleSituation(
-		"<p>Decidis avanzar por la cueva afrontando todos los peligros.</p>\
+		"<p>You decide to advance through the cave facing all dangers.</p>\
 		\
-		<p>En el camino te encuentras al lanzarrocas que te desafia a luchar.</p>\
+		<p>On the way you meet the rock thrower who challenges you to a fight.</p>\
 		\
-		<p>Luchais contra el <a href='https://clashroyale.fandom.com/es/wiki/Lanzarrocas'target=”_blank”>Manolos</a> y los murciélagos pero al ser ellos tan fuertes y Manolos al tener tantas rocas para lanzar necesitáis tomaros una poción.</p>\
+		<p>You fight against the rock thrower and the bats but since they are so strong and the rock thrower has so many rocks to throw you need to drink a potion.</p>\
 		\
-		<p class=transient><a href='./pocimas'>Coges la pocion</a></p>",
+		<p class=transient><a href='./pocimas'>You take the potion</a></p>",
 		{
 			actions: {
                 "pocimas": function(character, system, action) {
                     if(character.qualities.negra == 1){
 						system.setQuality("negra", 0);
-						system.write("<p>La pocion elegida tira sueño y mareos para tus enemigos. Tus enemigos <a href=castillo>son derrotados</a></p>");
+						system.write("<p>The chosen potion casts sleep and dizziness for your enemies. your enemies<a href=castillo>are defeated</a></p>");
 					}else{
 						if(character.qualities.azul == 1){
 							system.setQuality("azul", );
-							system.write("<p>La pocion elegida tira hielo y congela a tus enemigos. Tus enemigos <a href=castillo>son derrotados</a></p>");
+							system.write("<p>The chosen potion throws ice and freezes your enemies. your enemies<a href=castillo>are defeated</a></p>");
 							
 						}else{
 							if(character.qualities.morada == 1){
 								system.setQuality("morada", 0);
-								system.write("<p>La pocion elegida os da furia, es decir fuerza y rapidez para acabar con los enemigos. Tus enemigos <a href=castillo>son derrotados</a></p>");
+								system.write("<p>The chosen potion gives you fury, that is, strength and speed to kill enemies. your enemies<a href=castillo>are defeated</a></p>");
 							}else{
 								if(character.qualities.naranja == 1){
 									system.setQuality("naranja", 0);
-									system.write("<p>La pocion elegida tira veneno para acabar con los enemigos. Tus enemigos <a href=castillo>son derrotados</a></p>");
+									system.write("<p>The chosen potion throws poison to kill enemies. your enemies<a href=castillo>are defeated</a></p>");
 								}
 							}
 						}
@@ -277,49 +277,49 @@ undum.game.situations = {
 		}
 	),
 	castillo: new undum.SimpleSituation(
-		"<h1>CASTILLO</h1>\
-		<p>Desde una torre central la bruja Carmen os presenta la Arena Real donde os aparecerán enemigos a derrotar.\
-		Los enemigos serán un montón de esqueletos dispuestos a acabar con tu vida pero vas a tener que enfrentarte a ellos si quieres seguir en tu camino de recuperar el martillo.</p>\
+		"<h1>CASTLE</h1>\
+		<p>From a central tower, the witch Carmen introduces you to the Royal Arena where enemies will appear to defeat.\
+		The enemies will be a bunch of skeletons ready to end your life but you will have to face them if you want to continue on your way to recover the hammer.</p>\
 		\
-		<p>La puerta se cierra de un portazo, y se escucha una risa malvada, desde las escaleras la <a href='https://clashroyale.fandom.com/es/wiki/Bruja'target=”_blank”>Bruja Carmen</a> hace su aparición y os dais cuenta que caísteis en su trampa.</p>\
+		<p> The door slams shut, and an evil laugh is heard, from the stairs the witch Carmen makes her appearance and you realize that you fell into her trap.</ p> \
 		\
 		<center><img src='media/img/brujaCarmen.jpg' width='450' height='300'></center>\
 		\
-		<p>Es una trampilla falsa que os hace caer hacia la Arena.</p>\
+		<p>It's a fake trapdoor that drops you into the Arena.</p>\
 		\
-		<p class=transient><a href='arenareal'>Ir a la arena Real</a></p>"
+		<p class=transient><a href='arenareal'>Go to the Royal Arena</a></p>"
 	),
 	arenareal: new undum.SimpleSituation(
-		"<h1>ARENA REAL</h1>\
-		<p>Desde una torre central la bruja Carmen os presenta la Arena Real donde os aparecerán enemigos a derrotar.</p>\
+		"<h1>ROYAL ARENA</h1>\
+		<p>From a central tower, the witch Carmen introduces you to the Royal Arena where enemies will appear to defeat.</p>\
 		\
-		<p>Los enemigos son un montón de esqueletos dispuestos a acabar con tu vida pero vas a tener que enfrentarte a ellos si quieres seguir en tu camino de recuperar el martillo.</p>\
+		<p>The enemies are a bunch of skeletons ready to end your life but you're going to have to face them if you want to continue on your way to get the hammer back.</p>\
 		\
 		<center><img src='media/img/esqueletos.jpeg' width='450' height='300'></center>\
 		\
-		<p class=transient><a href=fuerte>Realizar ataque fuerte</a></p>\
+		<p class=transient><a href=fuerte></a>Perform strong attack</p>\
 		\
-		<p class=transient><a href=debil>Realizar ataque debil</a></p>"
+		<p class=transient><a href=debil>Perform weak attack</a></p>"
 	),
 	fuerte: new undum.SimpleSituation(
-		"<p>Tras realizar el golpe fuerte acabas con la mayoría de ellos pero, tendrás que hacer otro\
-		ataque si quieres acabar con ellos completamente.</p>\
+		"<p>After performing the strong blow you kill most of them but, you will have to do another\
+		attack if you want to finish them off completely.</p>\
 		\
-		<p class=transient><a href=atacar>Volver a atacar</a></p>"
+		<p class=transient><a href=atacar>Attack again</a></p>"
 	),
 	debil: new undum.SimpleSituation(
-		"<p>Te quitas unos pocos enemigos pero al ser ellos muchos más, te atacan en el brazo con lo que acabarás malherido de la batalla,\
-		tras un par de segundos te recuperas e intentarás volver a atacar para acabar con todos ellos.</p>\
+		"<p>You take out a few enemies but since they are many more, they attack you in the arm with which you will end up badly injured from the battle,\
+		after a couple of seconds you recover and try to attack again to kill them all.</p>\
 		\
-		<p class=transient><a href=atacar>Volver a atacar</a></p>"
+		<p class=transient><a href=atacar>Attack again</a></p>"
 	),
 	atacar: new undum.SimpleSituation(
-		"<p>Tras realizar otro ataque, todos los esqueletos han sido derrotados y la bruja con cara de preocupación vuelve al castillo. \
-		Intentamos seguirla y en el camino os encontráis una puerta.</p>\
-		<p class=transient><a href=puerta>Abrir puerta</a></p>"
+		"<p>After making another attack, all the skeletons have been defeated and the witch with a worried face returns to the castle. \
+		We try to follow it and on the way you find a door.</p>\
+		<p class=transient><a href=puerta>Open the door</a></p>"
 	),
 	puerta: new undum.SimpleSituation(
-		"<p>CONTINUARA...</p>"
+		"<p>TO BE CONTINUE...</p>"
 	),
     // NB: The 'hub' situation which is the main list of topics, is
     // defined wholly in the HTML file, and doesn't have an entry in

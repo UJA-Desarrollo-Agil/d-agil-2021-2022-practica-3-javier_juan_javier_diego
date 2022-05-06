@@ -25,7 +25,7 @@
     <link media="only screen and (max-width: 640px)"
           rel="stylesheet" type="text/css" href="media/css/undum-mobile.css">
     <!--<![endif]-->
-	
+
   </head>
   <body>
     <!-- This isn't needed and isn't visible in desktop versions,
@@ -52,23 +52,23 @@
           <!-- Game Background: edit this -->
           <h1>Montacity</h1>
           <p>
-            Nuestra historia trata sobre las aventuras de un montapuerco el cual ha perdido su arma legendaria (su martillo). La trama comienza en una mañana de verano,en la aldea 
-			llamada Montacity, cuando nuestro protagonista Murillo, se levanta como todos los días y se da cuenta de que le han robado su martillo.
+            Our story is about the adventures of a hog rider who has lost his legendary weapon (his hammer). The plot begins on a summer morning, in the village
+			called Montacity, when our protagonist Murillo gets up like every day and realizes that his hammer has been stolen.
           </p>
 		  <div class='buttons'>
-            <button id="save">Guardar</button><button id="erase">Borrar</button>
+            <button id="save">Save</button><button id="erase">Delete</button>
           </div>
-          <h1>Música</h1>
+          <h1>Music</h1>
           <div>
-            <p>Activar/desactivar la musica: </p>
+            <p>Activate/desactivate music: </p>
             <audio src="./media/musica/clashroyale.mp3" controls loop style="width: 150px;"></audio>  
           </div>
-		  <h1>Cambio de idioma</h1>
+		  <h1>Change the lenguage</h1>
 		  <div>
-			<span class="es">Español</span>
+			<span class="es">Spanish</span>
 			<input type="checkbox" class="check">
-			<span class="en">Inglés</span>
-			<h1>Hola</h1>
+			<span class="en">English</span>
+			<h1>Title</h1>
 			<script src="../games/tutorial/tutorial.game.en.js"></script>
 		  </div>
           <!-- End of Game Background -->
@@ -91,7 +91,7 @@
 
             <!-- Game Title: edit this -->
             <h1>Montacity<br></h1>
-            <h2>Realizado por</h2>
+            <h2>Made by</h2>
 			<h3>Javier Ávalos, Javier Lozano</h3>
 			<h3>Diego Corral, Juan Navarro</h3>			
             <!-- End of Game Title -->
