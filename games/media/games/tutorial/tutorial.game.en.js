@@ -316,10 +316,40 @@ undum.game.situations = {
 	atacar: new undum.SimpleSituation(
 		"<p>Tras realizar otro ataque, todos los esqueletos han sido derrotados y la bruja con cara de preocupación vuelve al castillo. \
 		Intentamos seguirla y en el camino os encontráis una puerta.</p>\
-		<p class=transient><a href=puerta>Abrir puerta</a></p>"
+		<p class=transient><a href=salatrofeos>Abrir puerta</a></p>"
 	),
-	puerta: new undum.SimpleSituation(
-		"<p>CONTINUARA...</p>"
+	salatrofeos: new undum.SimpleSituation(
+				"<h1>SALA TROFEOS</h1>\
+		<p>Abres la puerta y... no podías creer lo que veían tus ojos.</p>\
+		\
+		<p class=dialogo> '¡¡¡TODOS LOS OBJETOS ROBADOS POR LA BRUJA ESTABAN AHÍ!!!'</p>\
+		\
+		<center><img src='media/img/montasorprendido.jpg' width='200' height='208'></center>\
+		\
+		<p>Ahí estaba, era su martillo, no podía creerlo, estaba justo al lado del hacha de la valquiria.</p>\
+		\
+		<p class=transient><a href='./cogemartillo'>coger martillo</p>\
+		\
+		<center><img src='media/img/martillomonta.jpg' width='180' height='129'></center>\
+		\
+		<p>De repente todo tiembla y la valquiria te avisa de que la bruja ha tirado una pócima de terremoto para que no podais salir del castillo y quedar sepultados.</p>\
+		\
+		<p class=dialogo> 'Deberíamos coger todos los objetos robados y salir corriendo!!!'</p>\
+		\
+		<p>Cuando llegais a la puerta principal para salir se caen escombros y no podeis salir, pero cuando creeis que todo esta perdido aparece el minero Suso.</p>\
+		\
+		<p class=dialogo> 'El constructor javilillo me dijo que viniera a ayudaros, a mi tambien me robo la bruja Carmen mi casco especial'</p>\
+		\
+		<p>El minero Suso construye un camino por debajo del castillo y salís fuera de este.</p>",		
+		{
+			actions: {
+                "cogemartillo": function(character, system, to) {
+					system.setQuality("martillo", 1);
+				}
+			}
+		}
+		
+
 	),
     // NB: The 'hub' situation which is the main list of topics, is
     // defined wholly in the HTML file, and doesn't have an entry in
@@ -749,6 +779,9 @@ undum.game.qualities = {
     ),
 	azul: new undum.OnOffQuality(
         "Pocima azul", {priority:"0006", group:'inventario', onDisplay:"&#10003;"}
+    ),
+	martillo: new undum.OnOffQuality(
+		"martillo", {priority:"0007", group:'inventario', onDisplay:"&#10003;"}
     )
 };
 
