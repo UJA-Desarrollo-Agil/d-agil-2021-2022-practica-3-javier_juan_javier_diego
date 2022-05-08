@@ -64,6 +64,7 @@ undum.game.situations = {
     ),
 	magochapi: new undum.SimpleSituation(
 		"<h1>CASA DEL MAGO CHAPI</h1>\
+		<img src='https://pm1.narvii.com/6221/d1ac73e7cc95f0550397667e0872dd6e91f3a7db_hq.jpg' width='450' height='300' class='float_right'>\
 		<p>Vas a ver al <a href='https://clashroyale.fandom.com/es/wiki/Mago'target=”_blank”>Mago Chapi</a> y llamas a su casa, aunque te da miedo porque es algo tenebrosa,\
 		la puerta se abre sola y entras cuidadosamente.</p>\
 		\
@@ -77,6 +78,7 @@ undum.game.situations = {
 	),
 	mina: new undum.SimpleSituation(
 		"<h1>MINA</h1>\
+		<img src='https://esports.eldesmarque.com/wp-content/uploads/2022/04/minero-1.jpg' width='450' height='200' class='float_right'>\
 		<p>Vas a la mina a preguntar al <a href='https://clashroyale.fandom.com/es/wiki/Minero'target=”_blank”>Minero Suso</a> si sabe algo de tu martillo.</p>\
 		\
 		<p class=dialogo>'He visto pasar al <a href='https://clashofclans.fandom.com/es/wiki/Constructor'target=”_blank”>Constructor Javierlillo</a>\
@@ -112,6 +114,7 @@ undum.game.situations = {
 	
 	vueltacasamago: new undum.SimpleSituation(
 		"<h1>VUELVES A CASA DEL MAGO CHAPI</h1>\
+		<img src='https://pm1.narvii.com/6221/d1ac73e7cc95f0550397667e0872dd6e91f3a7db_hq.jpg' width='450' height='300' class='float_right'>\
 		<p>El mago prepara unas pócimas mientras esperas, ansioso le preguntas que dónde está tu martillo.</p>\
 		\
 		<p>El mago te da a elegir 1 de las 4 pócimas que preparó.</p>\
@@ -200,6 +203,7 @@ undum.game.situations = {
 	
 	aldeaduende: new undum.SimpleSituation(
         "<h1>ALDEA DUENDE</h1>\
+		<img src='https://c.tenor.com/LfeWEAwJb5QAAAAC/clash-of-clans.gif' width='450' height='300' class='float_right'>\
         <p>Llegas a la aldea duende en busca de tu objetivo, el constructor Javilillo.</p>\
         <p>Allí preguntas por él a un duende</p>\
         \
@@ -215,6 +219,7 @@ undum.game.situations = {
     ),
     cueva: new undum.SimpleSituation(
         "<h1>CUEVA</h1>\
+		<img src='https://images.ecestaticos.com/YaH_t4AC4r7zquMK8_XxRpGfixE=/0x0:0x0/557x418/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fd98%2Ff29%2F4af%2Fd98f294afd1cc0623c9f4b8b5b257800.jpg' width='450' height='300' class='float_right'>\
         \
         <p>La llegar a la cueva te encuentras a una chica pelirroja, te pregunta a dónde vas y le cuenta tu historia, decide acompañarte y se presenta:</p>\
 		\
@@ -235,6 +240,7 @@ undum.game.situations = {
     ),
 	tienesllave: new undum.SimpleSituation(
 		"<p>La ranura escondia una puerta que da acceso a un camino secreto, que solo se puede abrir si tienes la llave maestra del minero Suso.</p>\
+		<img src='https://tierrademisterios.com/wp-content/uploads/2019/02/tyty-1030x579.jpg' width='450' height='300' class='float_right'>\
 		\
 		<p>Gracias a la llave del minero utilizais un camino secreto creado por él y evitais los peligros de la tenebrosa cueva.</p>\
 		\
@@ -278,6 +284,7 @@ undum.game.situations = {
 	),
 	castillo: new undum.SimpleSituation(
 		"<h1>CASTILLO</h1>\
+		<img src='https://clashofclans.com/uploaded-images-blog/1290871650_1617709761.jpg?mtime=20210406114921' width='450' height='300' class='float_right'>\
 		<p>Desde una torre central la bruja Carmen os presenta la Arena Real donde os aparecerán enemigos a derrotar.\
 		Los enemigos serán un montón de esqueletos dispuestos a acabar con tu vida pero vas a tener que enfrentarte a ellos si quieres seguir en tu camino de recuperar el martillo.</p>\
 		\
@@ -324,13 +331,13 @@ undum.game.situations = {
 		\
 		<p class=dialogo> '¡¡¡TODOS LOS OBJETOS ROBADOS POR LA BRUJA ESTABAN AHÍ!!!'</p>\
 		\
-		<center><img src='media/img/montasorprendido.jpg' width='200' height='208'></center>\
+		<center><img src='https://c.tenor.com/ovQ-hOlJ7x4AAAAC/hog-scream-scream-hog.gif' width='450' height='300'></center>\
 		\
 		<p>Ahí estaba, era su martillo, no podía creerlo, estaba justo al lado del hacha de la valquiria.</p>\
 		\
 		<p class=transient><a href='./cogemartillo'>coger martillo</a></p>\
 		\
-		<center><img src='media/img/martillomonta.jpg' width='180' height='129'></center>\
+		<center><img src='media/img/martillomonta.jpg' width='400' height='300'></center>\
 		\
 		<p>De repente todo tiembla y la valquiria te avisa de que la bruja ha tirado una pócima de terremoto para que no podais salir del castillo y quedar sepultados.</p>\
 		\
@@ -338,7 +345,7 @@ undum.game.situations = {
 		\
 		<p>Cuando llegais a la puerta principal para salir se caen escombros y no podeis salir, pero cuando creeis que todo esta perdido aparece el minero Suso.</p>\
 		\
-		<center><img src='media/img/minero.jpg' width='200' height='208'></center>\
+		<center><img src='https://esports.eldesmarque.com/wp-content/uploads/2022/04/Minerin-1.jpg' width='450' height='300'></center>\
 		\
 		<p class=dialogo> 'El constructor javilillo me dijo que viniera a ayudaros, a mi tambien me robo la bruja Carmen mi casco especial'</p>\
 		\
@@ -359,7 +366,7 @@ undum.game.situations = {
 		 y Aldea Duende devolviendo cada uno de los objetos robados a sus dueños.</p>\
 		 <p>Después le haces una visita a tu amigo, el mago Chapi, que te ofrece una nueva poción para celebrarlo y pasáis allí el resto del día. Una vez que terminas le das las\
 		 gracias a Lidia la valquiria y ya por último llegas a tu casa, después de un día duro para conseguir recuperar tu martillo.</p>\
-		 <center><img src='media/img/montapuercos.jpg' width='200' height='208'></center>"
+		 <center><img src='https://www.fondoshd.mx/wallpapers/el-montapuercos-en-clash-royale-4340.jpg' width='400' height='300'></center>"
 	),
     // NB: The 'hub' situation which is the main list of topics, is
     // defined wholly in the HTML file, and doesn't have an entry in
@@ -791,7 +798,7 @@ undum.game.qualities = {
         "Pocima azul", {priority:"0006", group:'inventario', onDisplay:"&#10003;"}
     ),
 	martillo: new undum.OnOffQuality(
-		"martillo", {priority:"0007", group:'inventario', onDisplay:"&#10003;"}
+		"Martillo", {priority:"0007", group:'inventario', onDisplay:"&#10003;"}
     )
 };
 
@@ -817,15 +824,3 @@ undum.game.init = function(character, system) {
     //character.qualities.inspiration = 0;
     system.setCharacterText("<p></p>");
 };
-
-var check=document.querySelector(".check");
-check.addEventListener('click',idioma);
-
-undum.game.init=function idioma(){
-	let id=check.checked;
-	if(id==true){
-		location.href="games/tutorial.en.html";
-	}else{
-		location.href="games/tutorial.es.html";
-	}
-}
