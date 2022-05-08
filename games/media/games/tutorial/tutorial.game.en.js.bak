@@ -64,6 +64,7 @@ undum.game.situations = {
     ),
 	magochapi: new undum.SimpleSituation(
 		"<h1>CASA DEL MAGO CHAPI</h1>\
+		<img src='https://pm1.narvii.com/6221/d1ac73e7cc95f0550397667e0872dd6e91f3a7db_hq.jpg' width='300' height='200' class='float_right'>\
 		<p>Vas a ver al <a href='https://clashroyale.fandom.com/es/wiki/Mago'target=”_blank”>Mago Chapi</a> y llamas a su casa, aunque te da miedo porque es algo tenebrosa,\
 		la puerta se abre sola y entras cuidadosamente.</p>\
 		\
@@ -77,6 +78,7 @@ undum.game.situations = {
 	),
 	mina: new undum.SimpleSituation(
 		"<h1>MINA</h1>\
+		<img src='https://esports.eldesmarque.com/wp-content/uploads/2022/04/minero-1.jpg' width='300' height='200' class='float_right'>\
 		<p>Vas a la mina a preguntar al <a href='https://clashroyale.fandom.com/es/wiki/Minero'target=”_blank”>Minero Suso</a> si sabe algo de tu martillo.</p>\
 		\
 		<p class=dialogo>'He visto pasar al <a href='https://clashofclans.fandom.com/es/wiki/Constructor'target=”_blank”>Constructor Javierlillo</a>\
@@ -200,10 +202,11 @@ undum.game.situations = {
 	
 	aldeaduende: new undum.SimpleSituation(
         "<h1>ALDEA DUENDE</h1>\
+		<img src='https://c.tenor.com/LfeWEAwJb5QAAAAC/clash-of-clans.gif' width='300' height='200' class='float_right'>\
         <p>Llegas a la aldea duende en busca de tu objetivo, el constructor Javilillo.</p>\
         <p>Allí preguntas por él a un duende</p>\
         \
-        <p class=dialogo>'Mi nombre es Xarly, cuidado soy un duende jijijijiji'</p>\
+        <p class=dialogo>'Mi nombre es ,<a href='https://clashroyale.fandom.com/es/wiki/Duende'target=”_blank”>Xarly</a> cuidado soy un duende jijijijiji'</p>\
         \
         <p>El Duende Xarly sale corriendo, asi que tu sigues buscando al Constructor Javilillo</p>\
         \
@@ -218,7 +221,7 @@ undum.game.situations = {
         \
         <p>La llegar a la cueva te encuentras a una chica pelirroja, te pregunta a dónde vas y le cuenta tu historia, decide acompañarte y se presenta:</p>\
 		\
-		<p class=dialogo>'Yo soy Lidia la valquiria, soy una justiciera y voy a derrotar a la bruja, ella tendrá tu martillo, vayamos a por ella'</p>\
+		<p class=dialogo>'Yo soy <a href='https://clashroyale.fandom.com/es/wiki/Valquiria'target=”_blank”>Lidia la Valquiria</a>, soy una justiciera y voy a derrotar a la bruja, ella tendrá tu martillo, vayamos a por ella'</p>\
 		\
 		<p class=transient><a href='./entrarcueva'>Entras a la cueva.</p>",
 		{
@@ -245,7 +248,7 @@ undum.game.situations = {
 		\
 		<p>En el camino te encuentras al lanzarrocas que te desafia a luchar.</p>\
 		\
-		<p>Luchais contra el lanzarrocas y los murciélagos pero al ser ellos tan fuertes y el lanzarrocas tener tantas rocas para lanzar necesitáis tomaros una poción.</p>\
+		<p>Luchais contra el <a href='https://clashroyale.fandom.com/es/wiki/Lanzarrocas'target=”_blank”>Manolos</a> y los murciélagos pero al ser ellos tan fuertes y Manolos al tener tantas rocas para lanzar necesitáis tomaros una poción.</p>\
 		\
 		<p class=transient><a href='./pocimas'>Coges la pocion</a></p>",
 		{
@@ -281,7 +284,7 @@ undum.game.situations = {
 		<p>Desde una torre central la bruja Carmen os presenta la Arena Real donde os aparecerán enemigos a derrotar.\
 		Los enemigos serán un montón de esqueletos dispuestos a acabar con tu vida pero vas a tener que enfrentarte a ellos si quieres seguir en tu camino de recuperar el martillo.</p>\
 		\
-		<p>La puerta se cierra de un portazo, y se escucha una risa malvada, desde las escaleras la bruja Carmen hace su aparición y os dais cuenta que caísteis en su trampa.</p>\
+		<p>La puerta se cierra de un portazo, y se escucha una risa malvada, desde las escaleras la <a href='https://clashroyale.fandom.com/es/wiki/Bruja'target=”_blank”>Bruja Carmen</a> hace su aparición y os dais cuenta que caísteis en su trampa.</p>\
 		\
 		<center><img src='media/img/brujaCarmen.jpg' width='450' height='300'></center>\
 		\
@@ -316,10 +319,50 @@ undum.game.situations = {
 	atacar: new undum.SimpleSituation(
 		"<p>Tras realizar otro ataque, todos los esqueletos han sido derrotados y la bruja con cara de preocupación vuelve al castillo. \
 		Intentamos seguirla y en el camino os encontráis una puerta.</p>\
-		<p class=transient><a href=puerta>Abrir puerta</a></p>"
+		<p class=transient><a href=salatrofeos>Abrir puerta</a></p>"
 	),
-	puerta: new undum.SimpleSituation(
-		"<p>CONTINUARA...</p>"
+	salatrofeos: new undum.SimpleSituation(
+				"<h1>SALA TROFEOS</h1>\
+		<p>Abres la puerta y... no podías creer lo que veían tus ojos.</p>\
+		\
+		<p class=dialogo> '¡¡¡TODOS LOS OBJETOS ROBADOS POR LA BRUJA ESTABAN AHÍ!!!'</p>\
+		\
+		<center><img src='media/img/montasorprendido.jpg' width='200' height='208'></center>\
+		\
+		<p>Ahí estaba, era su martillo, no podía creerlo, estaba justo al lado del hacha de la valquiria.</p>\
+		\
+		<p class=transient><a href='./cogemartillo'>coger martillo</a></p>\
+		\
+		<center><img src='media/img/martillomonta.jpg' width='180' height='129'></center>\
+		\
+		<p>De repente todo tiembla y la valquiria te avisa de que la bruja ha tirado una pócima de terremoto para que no podais salir del castillo y quedar sepultados.</p>\
+		\
+		<p class=dialogo> 'Deberíamos coger todos los objetos robados y salir corriendo!!!'</p>\
+		\
+		<p>Cuando llegais a la puerta principal para salir se caen escombros y no podeis salir, pero cuando creeis que todo esta perdido aparece el minero Suso.</p>\
+		\
+		<center><img src='media/img/minero.jpg' width='200' height='208'></center>\
+		\
+		<p class=dialogo> 'El constructor javilillo me dijo que viniera a ayudaros, a mi tambien me robo la bruja Carmen mi casco especial'</p>\
+		\
+		<p>El minero Suso construye un camino por debajo del castillo y <a href=salir>salís</a> fuera de este.</p>",		
+		{
+			actions: {
+                "cogemartillo": function(character, system, to) {
+					system.setQuality("martillo", 1);
+				}
+			}
+		}
+		
+
+	),
+	salir: new undum.SimpleSituation(
+		"<h1>Vuelta a la normalidad</h1>\
+		<p>Tras haber conseguido salir tras la ayuda del minero, el montapuercos Murillo pasa por todas las ciudades como Montacity\
+		 y Aldea Duende devolviendo cada uno de los objetos robados a sus dueños.</p>\
+		 <p>Después le haces una visita a tu amigo, el mago Chapi, que te ofrece una nueva poción para celebrarlo y pasáis allí el resto del día. Una vez que terminas le das las\
+		 gracias a Lidia la valquiria y ya por último llegas a tu casa, después de un día duro para conseguir recuperar tu martillo.</p>\
+		 <center><img src='media/img/montapuercos.jpg' width='200' height='208'></center>"
 	),
     // NB: The 'hub' situation which is the main list of topics, is
     // defined wholly in the HTML file, and doesn't have an entry in
@@ -749,6 +792,9 @@ undum.game.qualities = {
     ),
 	azul: new undum.OnOffQuality(
         "Pocima azul", {priority:"0006", group:'inventario', onDisplay:"&#10003;"}
+    ),
+	martillo: new undum.OnOffQuality(
+		"martillo", {priority:"0007", group:'inventario', onDisplay:"&#10003;"}
     )
 };
 
