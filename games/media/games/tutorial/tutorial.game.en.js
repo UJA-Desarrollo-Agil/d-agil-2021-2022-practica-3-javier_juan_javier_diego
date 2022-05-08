@@ -328,7 +328,7 @@ undum.game.situations = {
 		\
 		<p>Ahí estaba, era su martillo, no podía creerlo, estaba justo al lado del hacha de la valquiria.</p>\
 		\
-		<p class=transient><a href='./cogemartillo'>coger martillo</p>\
+		<p class=transient><a href='./cogemartillo'>coger martillo</a></p>\
 		\
 		<center><img src='media/img/martillomonta.jpg' width='180' height='129'></center>\
 		\
@@ -338,9 +338,11 @@ undum.game.situations = {
 		\
 		<p>Cuando llegais a la puerta principal para salir se caen escombros y no podeis salir, pero cuando creeis que todo esta perdido aparece el minero Suso.</p>\
 		\
+		<center><img src='media/img/minero.jpg' width='200' height='208'></center>\
+		\
 		<p class=dialogo> 'El constructor javilillo me dijo que viniera a ayudaros, a mi tambien me robo la bruja Carmen mi casco especial'</p>\
 		\
-		<p>El minero Suso construye un camino por debajo del castillo y salís fuera de este.</p>",		
+		<p>El minero Suso construye un camino por debajo del castillo y <a href=salir>salís</a> fuera de este.</p>",		
 		{
 			actions: {
                 "cogemartillo": function(character, system, to) {
@@ -350,6 +352,14 @@ undum.game.situations = {
 		}
 		
 
+	),
+	salir: new undum.SimpleSituation(
+		"<h1>Vuelta a la normalidad</h1>\
+		<p>Tras haber conseguido salir tras la ayuda del minero, el montapuercos Murillo pasa por todas las ciudades como Montacity\
+		 y Aldea Duende devolviendo cada uno de los objetos robados a sus dueños.</p>\
+		 <p>Después le haces una visita a tu amigo, el mago Chapi, que te ofrece una nueva poción para celebrarlo y pasáis allí el resto del día. Una vez que terminas le das las\
+		 gracias a Lidia la valquiria y ya por último llegas a tu casa, después de un día duro para conseguir recuperar tu martillo.</p>\
+		 <center><img src='media/img/montapuercos.jpg' width='200' height='208'></center>"
 	),
     // NB: The 'hub' situation which is the main list of topics, is
     // defined wholly in the HTML file, and doesn't have an entry in
