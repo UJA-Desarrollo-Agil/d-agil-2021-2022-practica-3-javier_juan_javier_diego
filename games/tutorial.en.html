@@ -25,7 +25,7 @@
     <link media="only screen and (max-width: 640px)"
           rel="stylesheet" type="text/css" href="media/css/undum-mobile.css">
     <!--<![endif]-->
-
+	
   </head>
   <body>
     <!-- This isn't needed and isn't visible in desktop versions,
@@ -46,7 +46,6 @@
     </ul>
 
     <div id="page">
-
       <div id="tools_wrapper">
         <div id="info_panel" class="tools left">
 
@@ -56,12 +55,24 @@
             Nuestra historia trata sobre las aventuras de un montapuerco el cual ha perdido su arma legendaria (su martillo). La trama comienza en una mañana de verano,en la aldea 
 			llamada Montacity, cuando nuestro protagonista Murillo, se levanta como todos los días y se da cuenta de que le han robado su martillo.
           </p>
-          <!-- End of Game Background -->
-
-          <div class='buttons'>
+		  <div class='buttons'>
             <button id="save">Guardar</button><button id="erase">Borrar</button>
           </div>
-        </div>
+          <h1>Música</h1>
+          <div>
+            <p>Activar/desactivar la musica: </p>
+            <audio src="./media/musica/clashroyale.mp3" controls loop style="width: 150px;"></audio>  
+          </div>
+		  <h1>Cambio de idioma</h1>
+		  <div id="google_translate_element" class="google"></div>
+			<script type="text/javascript">
+			function googleTranslateElementInit() {
+				new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+			}
+			</script>
+			<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		</div>
+          <!-- End of Game Background -->
 
         <div id="character_panel" class="tools right">
           <h1>Murillo</h1>
@@ -87,7 +98,7 @@
 
             <noscript><p class="noscript_message">This game requires 
               Javascript.</p></noscript>
-            <p class="click_message">click to begin</p>
+            <p class="click_message">Comenzar</p>
           </div>
         </div>
 
@@ -104,6 +115,7 @@
 
           <!-- This line is totally optional. -->
           <p>Created with <a href="http://idmillington.github.io/undum/">Undum</a>.</p>
+		  <input id="clickMe" type="button" value="Ayuda" onclick="doFunction();" />
         </div>
       </div>
     </div> <!-- End of div.page -->
@@ -238,9 +250,13 @@
     <!-- Load the libraries we depend on -->
     <script type="text/javascript" src="media/js/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="media/js/undum.js"></script>
-
+	
+	
     <!-- Change the name of this file. It is your main game file. -->
     <script type="text/javascript"
             src="media/games/tutorial/tutorial.game.en.js"></script>
+		
+	
+	
   </body>
 </html>

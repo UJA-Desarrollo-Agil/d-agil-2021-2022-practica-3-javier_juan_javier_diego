@@ -15,8 +15,13 @@
   * 9 [Sprint 1](#sprint1)
        * 9.1 [Trello](#trello) 
        * 9.2 [Telegram](#telegram)
-  * 10 [Sprint Review](#sprint_review)
-  * 11 [Sprint Retrospective](#sprint_retrospective)
+       * 9.3 [Sprint Review](#sprint_review)
+       * 9.4 [Sprint Retrospective](#sprint_retrospective)
+  * 10 [Sprint 2](#sprint2)
+       * 10.1 [Trello](#trello2) 
+       * 10.2 [Telegram](#telegram2)
+       * 10.3 [Sprint Review](#sprint_review2)
+       * 10.4 [Sprint Retrospective](#sprint_retrospective2)
 
 <a name="indice"></a>
 ## Miembros
@@ -125,5 +130,43 @@ También hemos llegado a la conclusión que al tratarse de un grupo formado por 
 están todos los días juntos, no hemos tenido problema a la hora de realizar las diferentes reuniones para este Sprint.
 
 Finalmente, hemos dedicado mas tiempo en juntar todas las partes y en revisar la historia al completo, para que quede todo correctamente.
+
+
+<a name="sprint2"></a>
+## Sprint 2 
+
+El objetivo de este Sprint es la de entregar una primera versión de nuestro proyecto a través de la metodología Scrum.
+
+<a name="trello2"></a>
+### Trello
+
+En primer lugar, mostraremos cómo ha quedado nuestro tablero de Trello tras realizar el Sprint 2.
+
+![image](https://user-images.githubusercontent.com/99321214/167675842-461a50ea-b7b6-41dc-bef3-484efc955a5c.png)
+
+
+<a name="telegram2"></a>
+### Telegram
+
+En este apartado, mostraremos una captura de pantalla del grupo de Telegram.
+
+![image](https://user-images.githubusercontent.com/99321214/167674916-a2e29e4d-10c7-4801-aa59-9b6b2cf64622.png)
+
+<a name="sprint_review2"></a>
+## Sprint Review
+
+Hemos completado todas las historias de usuario que propusimos para este sprint. A continuación se muestra una tabla con observaciones sobre algunas de ellas.
+
+![image](https://user-images.githubusercontent.com/99321214/167680354-4f36be0c-aab3-4771-a727-10a0d1af06ef.png)
+
+![image](https://user-images.githubusercontent.com/99321214/167680474-17b133b2-0e86-463d-94cf-d04f58cd3c29.png)
+
+
+<a name="sprint_retrospective2"></a>
+## Sprint Retrospective
+
+En esta reunión, no hemos tenido mucho problema para quedar para hacer las reuniones diarias salvo algunos días puntuales que teníamos mayor carga de trabajo entre semana, la cambiábamos a hacerla algún sábado para poder completarla.
+Finalmente, hemos dedicado mayor tiempo en hacer las diferentes historias de usuario en esta ocasión, debido a que algunas eran más complejas lo que hizo que nos demorase más tiempo.
+
 
 [SUBIR](#top)

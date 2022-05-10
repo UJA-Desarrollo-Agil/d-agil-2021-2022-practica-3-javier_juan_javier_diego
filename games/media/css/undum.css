@@ -350,6 +350,7 @@ img.float_left {
 .progress_bar .right_label {
     float: right;
 }
+
 #content_library, #ui_library {
     display: none;
 }
