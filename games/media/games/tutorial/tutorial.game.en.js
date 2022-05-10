@@ -47,6 +47,9 @@ undum.game.situations = {
         \
 		<p>La solucion es <a href='./aciertas'>D</a>.</p>",
 		{
+			enter: function(character, system, from) {
+                system.setQuality('progresion',7);
+			},
             actions: {
 				'aciertas': "<p>Tras resolver el acertijo,recibes el dato\
 							de que a  las afueras de la ciudad vive un mago\
@@ -74,7 +77,12 @@ undum.game.situations = {
 		\
 		<p class='transient'><a href='bosque'>Aceptas la tarea</a>.</p>\
 		\
-		<p class='transient'><a href='mina'>No aceptas la tarea</a>.</p>"
+		<p class='transient'><a href='mina'>No aceptas la tarea</a>.</p>",
+		{
+			enter: function(character, system, from) {
+                system.setQuality('progresion',14);
+			}
+		}
 	),
 	mina: new undum.SimpleSituation(
 		"<h1>MINA</h1>\
@@ -89,6 +97,7 @@ undum.game.situations = {
 		{
 			enter: function(character, system, to) {
                 system.setQuality("Llave", 1);
+				system.setQuality('progresion',28);
             }
 		}
 	),
@@ -104,6 +113,9 @@ undum.game.situations = {
 		\
 		<p class='transient'><a href='vueltacasamago'>Vuelves a casa del mago</a>.</p>",
 		{
+			enter: function(character, system, from) {
+                system.setQuality('progresion',35);
+			},
 			actions: {
 				'detalladamente' : "<center><img src='media/img/murcielagos.jpg' width='400' height='250'></center>\
 									<p>Si miras detalladamente y observas que son pequeños murciélagos feroces\
@@ -124,6 +136,9 @@ undum.game.situations = {
 		<p class='transient'><a href='negra'>Eliges la negra</a>.</p>\
 		<p class='transient'><a href='azul'>Eliges la azul</a>.</p>",
 		{
+			enter: function(character, system, from) {
+                system.setQuality('progresion',42);
+			},
 			actions: {
 				"morada": function(character, system, action) {
                     system.setQuality("morada", 1);
@@ -152,6 +167,7 @@ undum.game.situations = {
 		{
 			enter: function(character, system, to) {
                 system.setQuality("morada", 1);
+                system.setQuality('progresion',49);
             }
 		}
 	),
@@ -167,6 +183,7 @@ undum.game.situations = {
 		{
 			enter: function(character, system, to) {
                 system.setQuality("naranja", 1);
+				system.setQuality('progresion',49);
             }
 		}
 	),
@@ -182,6 +199,7 @@ undum.game.situations = {
 		{
 			enter: function(character, system, to) {
                 system.setQuality("negra", 1);
+				system.setQuality('progresion',49);
             }
 		}
 	),
@@ -197,6 +215,7 @@ undum.game.situations = {
 		{
 			enter: function(character, system, to) {
                 system.setQuality("azul", 1);
+				system.setQuality("progresion",49);
             }
 		}
 	),
@@ -215,7 +234,12 @@ undum.game.situations = {
         \
         <p class=dialogo>'Vi a una bandada de murcielagos con un martillo encima, se dirigian a una cueva, nose que tramaran...'</p>\
         \
-        <p class=transient><a href=cueva>Vas a la cueva</a></p>"
+        <p class=transient><a href=cueva>Vas a la cueva</a></p>",
+		{
+			enter: function(character, system, from) {
+                system.setQuality('progresion',56);
+			}
+		}
     ),
     cueva: new undum.SimpleSituation(
         "<h1>CUEVA</h1>\
@@ -227,6 +251,9 @@ undum.game.situations = {
 		\
 		<p class=transient><a href='./entrarcueva'>Entras a la cueva.</p>",
 		{
+			enter: function(character, system, from) {
+                system.setQuality('progresion',63);
+			},
 			actions: {
                 "entrarcueva": function(character, system, action) {
                     if(character.qualities.Llave == 1){
@@ -244,7 +271,14 @@ undum.game.situations = {
 		\
 		<p>Gracias a la llave del minero utilizais un camino secreto creado por él y evitais los peligros de la tenebrosa cueva.</p>\
 		\
-		<p class=transient><a href=castillo>Continuais vuestro camino</a></p>"
+		<p class=transient><a href=castillo>Continuais vuestro camino</a></p>",
+		{
+			enter: function(character, system, to) {
+                system.setQuality("Llave", 0);
+                system.setQuality('progresion',70);
+			
+            }
+		}
 	),
 	notienesllave: new undum.SimpleSituation(
 		"<p>Decidis avanzar por la cueva afrontando todos los peligros.</p>\
@@ -255,6 +289,10 @@ undum.game.situations = {
 		\
 		<p class=transient><a href='./pocimas'>Coges la pocion</a></p>",
 		{
+			enter: function(character, system, to) {
+                system.setQuality('progresion',70);
+			
+            },
 			actions: {
                 "pocimas": function(character, system, action) {
                     if(character.qualities.negra == 1){
@@ -294,7 +332,13 @@ undum.game.situations = {
 		\
 		<p>Es una trampilla falsa que os hace caer hacia la Arena.</p>\
 		\
-		<p class=transient><a href='arenareal'>Ir a la arena Real</a></p>"
+		<p class=transient><a href='arenareal'>Ir a la arena Real</a></p>",
+		{
+			enter: function(character, system, to) {
+                system.setQuality('progresion',75);
+			
+            }
+		}
 	),
 	arenareal: new undum.SimpleSituation(
 		"<h1>ARENA REAL</h1>\
@@ -306,24 +350,48 @@ undum.game.situations = {
 		\
 		<p class=transient><a href=fuerte>Realizar ataque fuerte</a></p>\
 		\
-		<p class=transient><a href=debil>Realizar ataque debil</a></p>"
+		<p class=transient><a href=debil>Realizar ataque debil</a></p>",
+		{
+			enter: function(character, system, to) {
+                system.setQuality('progresion',80);
+			
+            }
+		}
 	),
 	fuerte: new undum.SimpleSituation(
 		"<p>Tras realizar el golpe fuerte acabas con la mayoría de ellos pero, tendrás que hacer otro\
 		ataque si quieres acabar con ellos completamente.</p>\
 		\
-		<p class=transient><a href=atacar>Volver a atacar</a></p>"
+		<p class=transient><a href=atacar>Volver a atacar</a></p>",
+		{
+			enter: function(character, system, to) {
+                system.setQuality('progresion',85);
+			
+            }
+		}
 	),
 	debil: new undum.SimpleSituation(
 		"<p>Te quitas unos pocos enemigos pero al ser ellos muchos más, te atacan en el brazo con lo que acabarás malherido de la batalla,\
 		tras un par de segundos te recuperas e intentarás volver a atacar para acabar con todos ellos.</p>\
 		\
-		<p class=transient><a href=atacar>Volver a atacar</a></p>"
+		<p class=transient><a href=atacar>Volver a atacar</a></p>",
+		{
+			enter: function(character, system, to) {
+                system.setQuality('progresion',85);
+			
+            }
+		}
 	),
 	atacar: new undum.SimpleSituation(
 		"<p>Tras realizar otro ataque, todos los esqueletos han sido derrotados y la bruja con cara de preocupación vuelve al castillo. \
 		Intentamos seguirla y en el camino os encontráis una puerta.</p>\
-		<p class=transient><a href=salatrofeos>Abrir puerta</a></p>"
+		<p class=transient><a href=salatrofeos>Abrir puerta</a></p>",
+		{
+			enter: function(character, system, to) {
+                system.setQuality('progresion',90);
+			
+            }
+		}
 	),
 	salatrofeos: new undum.SimpleSituation(
 				"<h1>SALA TROFEOS</h1>\
@@ -335,7 +403,7 @@ undum.game.situations = {
 		\
 		<p>Ahí estaba, era su martillo, no podía creerlo, estaba justo al lado del hacha de la valquiria.</p>\
 		\
-		<p class=transient><a href='./cogemartillo'>coger martillo</a></p>\
+		<p class=transient><a href='./cogemartillo'>Coger martillo</a></p>\
 		\
 		<center><img src='media/img/martillomonta.jpg' width='400' height='300'></center>\
 		\
@@ -351,6 +419,10 @@ undum.game.situations = {
 		\
 		<p>El minero Suso construye un camino por debajo del castillo y <a href=salir>salís</a> fuera de este.</p>",		
 		{
+			enter: function(character, system, to) {
+                system.setQuality("objetosrobados", 1);
+				system.setQuality('progresion',95);
+            },
 			actions: {
                 "cogemartillo": function(character, system, to) {
 					system.setQuality("martillo", 1);
@@ -366,7 +438,13 @@ undum.game.situations = {
 		 y Aldea Duende devolviendo cada uno de los objetos robados a sus dueños.</p>\
 		 <p>Después le haces una visita a tu amigo, el mago Chapi, que te ofrece una nueva poción para celebrarlo y pasáis allí el resto del día. Una vez que terminas le das las\
 		 gracias a Lidia la valquiria y ya por último llegas a tu casa, después de un día duro para conseguir recuperar tu martillo.</p>\
-		 <center><img src='https://www.fondoshd.mx/wallpapers/el-montapuercos-en-clash-royale-4340.jpg' width='400' height='300'></center>"
+		 <center><img src='https://www.fondoshd.mx/wallpapers/el-montapuercos-en-clash-royale-4340.jpg' width='400' height='300'></center>",
+		 {
+			enter: function(character, system, to) {
+                system.setQuality("objetosrobados", 0);
+				system.setQuality('progresion',100);
+            }			
+		 }
 	),
     // NB: The 'hub' situation which is the main list of topics, is
     // defined wholly in the HTML file, and doesn't have an entry in
@@ -759,6 +837,8 @@ undum.game.situations = {
     )
 };
 
+
+
 // ---------------------------------------------------------------------------
 /* The Id of the starting situation. */
 undum.game.start = "start";
@@ -799,8 +879,16 @@ undum.game.qualities = {
     ),
 	martillo: new undum.OnOffQuality(
 		"Martillo", {priority:"0007", group:'inventario', onDisplay:"&#10003;"}
-    )
+    ),
+	objetosrobados: new undum.OnOffQuality(
+        "Objetos robados", {priority:"0008", group:'inventario', onDisplay:"&#10003;"}
+	),
+	progresion: new undum.NumericQuality(
+        "Progresion (%)", {priority:"0009", group:'stats'}
+    ),
 };
+
+
 
 // ---------------------------------------------------------------------------
 /* The qualities are displayed in groups in the character bar. This
@@ -824,3 +912,10 @@ undum.game.init = function(character, system) {
     //character.qualities.inspiration = 0;
     system.setCharacterText("<p></p>");
 };
+
+document.getElementById("clickMe").onclick = function () { alert('Tienes que ayudar al montapuercos Murillo a completar la historia para recuperar su martillo y encontrar quien lo robo.'); };
+	var el = document.getElementById("clickMe");
+	if (el.addEventListener)
+		el.addEventListener("click", doFunction, false);
+	else if (el.attachEvent)
+		el.attachEvent('onclick', doFunction);
