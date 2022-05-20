@@ -22,6 +22,11 @@
        * 10.2 [Telegram](#telegram2)
        * 10.3 [Sprint Review](#sprint_review2)
        * 10.4 [Sprint Retrospective](#sprint_retrospective2)
+  * 11 [Métricas](#metricas)
+       * 11.1 [Datos totales del proyecto](#datos) 
+       * 11.2 [Gráfica BURN-UP](#grafica1)
+       * 11.3 [Gráfica BURN-DOWN](#grafica2)
+       * 11.4 [Tabla velocidades](#velocidades)
 
 <a name="indice"></a>
 ## Miembros
@@ -168,5 +173,42 @@ Hemos completado todas las historias de usuario que propusimos para este sprint.
 En esta reunión, no hemos tenido mucho problema para quedar para hacer las reuniones diarias salvo algunos días puntuales que teníamos mayor carga de trabajo entre semana, la cambiábamos a hacerla algún sábado para poder completarla.
 Finalmente, hemos dedicado mayor tiempo en hacer las diferentes historias de usuario en esta ocasión, debido a que algunas eran más complejas lo que hizo que nos demorase más tiempo.
 
+<a name="metricas"></a>
+## Métricas
+
+Estas son las gráficas y las tablas con los datos finales de todo nuestro proyecto.
+
+<a name="datos"></a>
+
+### Datos totales del proyecto
+
+En esta tabla, podemos apreciar todos los datos globales de nuestro proyecto de prácticas separado por las distintas fases de este. Cada fila representa una étapa del proyecto y las columnas los PH y valores de cada una de ellas dividido en 3 tipos (por hacer, hechos y totales).
+
+Datos tabla BURN-UP
+![image](https://user-images.githubusercontent.com/99321533/169485248-61d9772a-cf23-4722-a61b-ef7bb520e213.png)
+
+Datos tabla BURN-DOWN
+![image](https://user-images.githubusercontent.com/99321533/169488916-e50b926b-77ae-4822-a1b9-9aca4d038db1.png)
+
+<a name="grafica1"></a>
+### Gráfica BURN-UP
+
+![image](https://user-images.githubusercontent.com/99321533/169489456-f0aae711-aec5-4a15-8096-0210dbc9e29b.png)
+
+En la imagen aparece la gráfica Burn-up de los puntos de historia del proyecto.
+
+<a name="grafica2"></a>
+### Gráfica BURN-DOWN
+
+![image](https://user-images.githubusercontent.com/99321533/169489542-05497b73-4829-4f3a-8ca9-33358e705aa2.png)
+
+En la imagen aparece la gráfica Burn-down de los puntos de historia del proyecto.
+
+<a name="velocidades"></a>
+### Tabla velocidades
+
+![image](https://user-images.githubusercontent.com/99321533/169490453-87ddb475-8c4b-407d-a042-b24bf8b9855a.png)
+
+En esta tabla podemos apreciar la velocidad grupal a la que hemos ido realizando el proyecto, con una velocidad media de 51.
 
 [SUBIR](#top)
