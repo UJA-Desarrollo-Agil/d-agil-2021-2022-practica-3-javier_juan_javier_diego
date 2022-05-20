@@ -27,6 +27,7 @@
        * 11.2 [Gráfica BURN-UP](#grafica1)
        * 11.3 [Gráfica BURN-DOWN](#grafica2)
        * 11.4 [Tabla velocidades](#velocidades)
+       * 11.5 [Conclusiones](#conclusiones)
 
 <a name="indice"></a>
 ## Miembros
@@ -212,5 +213,15 @@ En la imagen aparece la gráfica Burn-down de los puntos de historia del proyect
 ![image](https://user-images.githubusercontent.com/99321533/169490453-87ddb475-8c4b-407d-a042-b24bf8b9855a.png)
 
 En esta tabla podemos apreciar la velocidad grupal a la que hemos ido realizando el proyecto, con una velocidad media de 51.
+
+<a name="conclusiones"></a>
+### Conclusiones
+
+Como conclusión, podemos decir que más o menos en cada uno de los dos sprint hemos hecho los mismos puntos de historia ya que 
+la velocidad media obtenida es prácticamente igual en comparación a los PH realizados.
+En las burn-up, los PH realizados ha estado por encima de los PH ideales en todo momento, ya que al principio en el primer sprint pudimos
+hacer muchos puntos de historia y más tarde fuimos haciéndolo de forma progresiva pero nunca estando por debajo de la gráfica ideal.
+
+
 
 [SUBIR](#top)
