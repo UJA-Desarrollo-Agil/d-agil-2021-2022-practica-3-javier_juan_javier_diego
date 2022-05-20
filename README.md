@@ -184,10 +184,12 @@ Estas son las gráficas y las tablas con los datos finales de todo nuestro proye
 
 En esta tabla, podemos apreciar todos los datos globales de nuestro proyecto de prácticas separado por las distintas fases de este. Cada fila representa una étapa del proyecto y las columnas los PH y valores de cada una de ellas dividido en 3 tipos (por hacer, hechos y totales).
 
-Datos tabla BURN-UP
+#### Datos tabla BURN-UP
+
 ![image](https://user-images.githubusercontent.com/99321533/169485248-61d9772a-cf23-4722-a61b-ef7bb520e213.png)
 
-Datos tabla BURN-DOWN
+#### Datos tabla BURN-DOWN
+
 ![image](https://user-images.githubusercontent.com/99321533/169488916-e50b926b-77ae-4822-a1b9-9aca4d038db1.png)
 
 <a name="grafica1"></a>
